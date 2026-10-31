@@ -5,7 +5,7 @@
 | 提出人 | zcqiand |
 | 提出日期 | 2026-10-31 |
 | 优先级 | P1 |
-| 状态 | 开发中（骨架已 init，L0/L5 绿；依赖安装待 Node 升版后执行） |
+| 状态 | 完成（2026-10-31 首航收官：Node 24.15.0 + L0-L5 全绿，AC-1..4 全过） |
 | 关联 ADR | —（扩展槽骨架，ktor X09 / harmonyos X14 先例同款） |
 
 ## 1. 需求描述
@@ -37,7 +37,7 @@ lab 家族 X15 扩展槽：Angular 22 前端栈进家族。suite 侧新增 mold/
 |---|---|---|---|---|---|
 | T-1 | mold 建 angular profile + 适配器 + 双仓 init + L0/L5 绿 | 开发 | Claude | 0.5h | 已完成 |
 | T-2 | 功能树镜像登记（mirror 免批，M/F 级） | 开发 | Claude | 0.2h | 已完成 |
-| T-3 | Node 升版 → npm install → L1-L4 全绿首航 → 家族档案/端口表收口 | 收口 | Claude | 0.5h | 未开始 |
+| T-3 | Node 升版 → npm install → L1-L4 全绿首航 → 家族档案/端口表收口 | 收口 | Claude | 0.5h | 已完成（2026-10-31，首航四坑修于 mold：eslint flat config 形状/tsconfig compilerOptions 层级/wrapper 反斜杠/fnReporter 格式；npx `--` 分隔随 X16 批） |
 
 ## 4. 功能影响（需求与功能对齐的唯一位置）
 

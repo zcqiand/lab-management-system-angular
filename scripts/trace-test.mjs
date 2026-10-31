@@ -9,8 +9,11 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import process from "node:process";
 
+// Windows 注意（2026-10-31 首航实测）：spawnSync shell:true 走 cmd.exe，
+// 路径必须反斜杠——正斜杠会被 cmd 解析成「命令 node_modules + 开关 /.bin/ng.cmd」，
+// 报 `'node_modules' is not recognized`。
 const ngBin =
-  process.platform === "win32" ? "node_modules/.bin/ng.cmd" : "node_modules/.bin/ng";
+  process.platform === "win32" ? "node_modules\\.bin\\ng.cmd" : "node_modules/.bin/ng";
 
 if (!existsSync(ngBin)) {
   mkdirSync(".state", { recursive: true });

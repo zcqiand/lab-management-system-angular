@@ -46,10 +46,7 @@ export default class FnReporter {
   /** vitest 2 */
   onFinished(files = []) {
     if (process.env.TRACE_MAP !== "1") return;
-    if (
-      typeof this.onTestRunEnd === "function" &&
-      files.length === 0
-    ) {
+    if (typeof this.onTestRunEnd === "function" && files.length === 0) {
       return; // v3+ 已经在 onTestRunEnd 写过了
     }
     const tests = [];
