@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "suite_version": "0.6.0",
+  "project": "lab-management-system-angular",
+  "stack": "angular",
+  "gates": {
+    "L1": {
+      "name": "格式（Prettier）",
+      "cmd": [
+        "npx",
+        "--no",
+        "prettier",
+        "--check",
+        "src",
+        "tests"
+      ],
+      "fix": "先确认 `npm install` 跑过。然后 `npx prettier --write src tests`。"
+    },
+    "L2": {
+      "name": "静态检查（ESLint + angular-eslint）",
+      "cmd": [
+        "npx",
+        "--no",
+        "eslint",
+        "src"
+      ],
+      "fix": "先确认 `npm install` 跑过。逐条修复 eslint；禁止用 eslint-disable 掩盖，除非同行注释给出理由。规则误伤在 eslint.config.js 定向降级并写理由，禁改门定义。"
+    },
+    "L3": {
+      "name": "编译（ng build，含模板严格类型检查）",
+      "cmd": [
+        "npx",
+        "--no",
+        "ng",
+        "build"
+      ],
+      "fix": "先确认 `npm install` 跑过。编译错回代码修；strictTemplates 的模板类型错也回代码修，禁用 $any() / 禁收紧 tsconfig 绕过，除非附 ADR 说明。首次构建拉依赖数分钟正常（npmmirror），反复卡死先探活再报。"
+    },
+    "L4": {
+      "name": "测试（Vitest，unit-test builder）",
+      "cmd": [
+        "npx",
+        "--no",
+        "ng",
+        "test"
+      ],
+      "fix": "先确认 `npm install` 跑过（报 ng 不存在 = 没装依赖），再让测试变绿。若测试本身有误，改测试前必须先说明理由。写测试挂功能 ID 用 tests/fn.ts 的 fnTest，禁裸 it/describe 挂 ID。"
+    }
+  },
+  "trace_cmd": [
+    "node",
+    "scripts/trace-test.mjs"
+  ],
+  "trace_env": {
+    "TRACE_MAP": "1"
+  },
+  "source_dirs": [
+    "src"
+  ],
+  "test_dirs": [
+    "src"
+  ]
+}

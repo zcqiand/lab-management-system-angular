@@ -1,0 +1,23 @@
+/* 全局样式底座。语义 token 立在这里，组件只引用 token，禁裸 hex。 */
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #1f2328;
+  --color-border: #d0d7de;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif;
+}

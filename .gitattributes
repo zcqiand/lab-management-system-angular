@@ -1,0 +1,4 @@
+# Windows core.autocrlf=true 下保 LF：
+# prettier 默认 endOfLine: lf，CRLF 会被 --check 判未格式化，L1 假红（go 仓同坑先例）
+* text=auto eol=lf
+*.bat text eol=crlf

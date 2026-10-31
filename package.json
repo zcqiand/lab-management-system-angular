@@ -1,0 +1,40 @@
+{
+  "name": "lab-management-system-angular",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ng serve",
+    "build": "ng build",
+    "preview": "ng serve",
+    "gate": "cd ../.. && python scripts/gate.py -p lab-management-system-angular",
+    "test": "ng test",
+    "trace": "node scripts/trace-test.mjs",
+    "lint": "eslint src",
+    "format": "prettier --write src tests",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit"
+  },
+  "dependencies": {
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/forms": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "@angular/router": "^22.2.0",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.2.0",
+    "@angular/cli": "^22.2.0",
+    "@angular/compiler-cli": "^22.2.0",
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "angular-eslint": "^22.6.0",
+    "eslint": "^9.17.0",
+    "jsdom": "^30.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "~6.0.0",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^4.0.8"
+  }
+}

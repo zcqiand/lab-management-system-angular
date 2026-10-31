@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "approved": false,
+  "base_sha": "d33476811cfea235",
+  "summary": "镜像家族 shared 树 M/F 级骨架（lab-management-system-shared 同源；I 级子项留待首个需求逐片镜像登记）",
+  "mirror": true,
+  "changes": [
+    {
+      "id": "M00",
+      "action": "新增",
+      "name": "租户管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M02",
+      "action": "新增",
+      "name": "资源管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03",
+      "action": "新增",
+      "name": "试验过程管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M04",
+      "action": "新增",
+      "name": "基础数据",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M05",
+      "action": "新增",
+      "name": "数据统计",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06",
+      "action": "新增",
+      "name": "检测能力",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M00.F01",
+      "action": "新增",
+      "name": "当前用户会话",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M00.F02",
+      "action": "新增",
+      "name": "登录选租户",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M01.F04",
+      "action": "新增",
+      "name": "权限管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M01.F05",
+      "action": "新增",
+      "name": "认证管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M02.F01",
+      "action": "新增",
+      "name": "合同管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F01",
+      "action": "新增",
+      "name": "接样管理",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F02",
+      "action": "新增",
+      "name": "任务分配",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F03",
+      "action": "新增",
+      "name": "数据录入",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F05",
+      "action": "新增",
+      "name": "报告审核",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F06",
+      "action": "新增",
+      "name": "报告批准",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F07",
+      "action": "新增",
+      "name": "报告发放",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F08",
+      "action": "新增",
+      "name": "报告归档",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M03.F09",
+      "action": "新增",
+      "name": "接样单详情",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M04.F06",
+      "action": "新增",
+      "name": "型号维护",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M04.F07",
+      "action": "新增",
+      "name": "规格维护",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M04.F08",
+      "action": "新增",
+      "name": "等级维护",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M04.F09",
+      "action": "新增",
+      "name": "牌号维护",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M05.F01",
+      "action": "新增",
+      "name": "报告汇总",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F01",
+      "action": "新增",
+      "name": "检测专项",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F02",
+      "action": "新增",
+      "name": "检测项目",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F03",
+      "action": "新增",
+      "name": "检测参数",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F04",
+      "action": "新增",
+      "name": "检测标准",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F05",
+      "action": "新增",
+      "name": "计算方法",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F06",
+      "action": "新增",
+      "name": "技术要求",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F07",
+      "action": "新增",
+      "name": "报告名称",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    },
+    {
+      "id": "M06.F08",
+      "action": "新增",
+      "name": "参数界面",
+      "reason": "REQ-2026-027-angular-frontend-skeleton"
+    }
+  ],
+  "sync_files": [
+    "docs/requirements/REQ-2026-027-angular-frontend-skeleton.md",
+    "docs/functions/function-tree.md"
+  ],
+  "applied_at": "2026-10-31T08:45:42+0800"
+}
