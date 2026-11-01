@@ -117,6 +117,83 @@
 | M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 规划 |
 | M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 规划 |
 
+### M06.F01 检测专项
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F01.I01 | 检测专项列表 + CRUD | 页面 | 前端+后端 |  | 开发中 |
+| M06.F01.I02 | 创建专项 | 接口 | 前端+后端 | POST /api/inspection/specialties：code/officialNo/name 必填；isOfficial/enabled 默认 true；sortOrder 默认 0 | 开发中 |
+| M06.F01.I03 | 更新专项 | 接口 | 前端+后端 | PUT /api/inspection/specialties/{code}：PATCH 语义，未传字段保留 | 开发中 |
+
+### M06.F02 检测项目
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F02.I01 | 检测项目列表（按专项过滤） | 页面 | 前端+后端 |  | 开发中 |
+| M06.F02.I02 | 项目↔专项/参数关联 | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F02.I03 | 更新项目 | 接口 | 前端+后端 | PUT /api/inspection/objects/{code}：PATCH 语义 | 开发中 |
+| M06.F02.I04 | 删除项目 | 接口 | 前端+后端 | DELETE /api/inspection/objects/{code}：204 if exists | 开发中 |
+| M06.F02.I05 | 专项↔项目 link | 接口 | 前端+后端 | POST /api/inspection/links/specialty-object：建立 specialty→object 关联，remark 可选 | 开发中 |
+| M06.F02.I06 | 专项↔项目 unlink | 接口 | 前端+后端 | DELETE /api/inspection/links/specialty-object：404 if 不存在 | 开发中 |
+| M06.F02.I07 | 项目↔参数 link | 接口 | 前端+后端 | POST /api/inspection/links/object-parameter：建立 object→parameter 关联，qualificationLevel 默认 QUALIFIED，sourcePage/remark 可选 | 开发中 |
+
+### M06.F03 检测参数
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F03.I01 | 检测参数列表 + CRUD | 页面 | 前端+后端 |  | 开发中 |
+| M06.F03.I02 | 参数↔标准关联 | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F03.I03 | 更新参数 | 接口 | 前端+后端 | PUT /api/inspection/parameters/{code}：PATCH 语义；aliases 传则整体替换 | 开发中 |
+
+### M06.F04 检测标准
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F04.I01 | 检测标准列表（状态过滤） | 页面 | 前端+后端 |  | 开发中 |
+| M06.F04.I02 | 标准 CRUD | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F04.I03 | 更新标准 | 接口 | 前端+后端 | PUT /api/inspection/standards/{code}：PATCH 语义 | 开发中 |
+| M06.F04.I04 | 删除标准 | 接口 | 前端+后端 | DELETE /api/inspection/standards/{code}：204 if exists | 开发中 |
+
+### M06.F05 计算方法
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F05.I01 | 计算方法维护 | 页面 | 前端+后端 |  | 开发中 |
+| M06.F05.I02 | 计算方法详情 | 接口 | 前端+后端 | GET /api/calculation-methods/{inspectionObjectCode}/{inspectionParameterCode}：复合主键 | 开发中 |
+| M06.F05.I03 | 创建计算方法 | 接口 | 前端+后端 | POST /api/calculation-methods：body CreateCalculationMethodRequest，algorithmType 默认 MANUAL、specimenCount 默认 1 | 开发中 |
+
+### M06.F06 技术要求
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F06.I01 | 技术要求列表（多维过滤） | 页面 | 前端+后端 |  | 开发中 |
+| M06.F06.I02 | 新建/编辑技术要求 | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F06.I05 | 删除技术要求（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/technical-requirements/{object}/{param}/{standard}（实现即原 M06.F06.I03） | 开发中 |
+
+### M06.F07 报告名称
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F07.I01 | 报告名称列表 + extFields 模板 | 页面 | 前端+后端 |  | 开发中 |
+| M06.F07.I02 | 报告名称↔标准/参数关联 | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F07.I03 | 创建报告名称 | 接口 | 前端+后端 | POST /api/report-names：code/name 必填；extFields 默认 [] | 开发中 |
+| M06.F07.I04 | 更新报告名称 | 接口 | 前端+后端 | PUT /api/report-names/{code}：PATCH 语义 | 开发中 |
+| M06.F07.I05 | 删除报告名称 | 接口 | 前端+后端 | DELETE /api/report-names/{code}：204 if exists | 开发中 |
+| M06.F07.I06 | 项目↔报告名称 link | 接口 | 前端+后端 | POST /api/report-names/links/object：建立 object→report-name 关联，remark 可选 | 开发中 |
+| M06.F07.I07 | 报告名称↔标准 link | 接口 | 前端+后端 | POST /api/report-names/links/standard：建立 report-name→standard(role) 关联，role 必填 | 开发中 |
+| M06.F07.I08 | 报告名称↔参数 link | 接口 | 前端+后端 | POST /api/report-names/links/parameter：建立 report-name→parameter 关联 | 开发中 |
+
+### M06.F08 参数界面
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M06.F08.I01 | 参数界面维护 + link | 页面 | 前端+后端 |  | 开发中 |
+| M06.F08.I02 | 参数界面详情 | 接口 | 前端+后端 | GET /api/param-interfaces/{code}：返回 ParamInterface（含 config 反序列化的 Map<String,Object>） | 开发中 |
+| M06.F08.I03 | 创建参数界面 | 接口 | 前端+后端 | POST /api/param-interfaces：code/componentPath 必填；config 默认 {} | 开发中 |
+| M06.F08.I04 | 更新参数界面 | 接口 | 前端+后端 | PUT /api/param-interfaces/{code}：PATCH 语义 | 开发中 |
+| M06.F08.I05 | 删除参数界面 | 接口 | 前端+后端 | DELETE /api/param-interfaces/{code}：204 if exists | 开发中 |
+| M06.F08.I06 | 参数↔界面 link | 接口 | 前端+后端 | POST /api/param-interfaces/links：建立 parameter→interface 关联，reportNameCode/config 可选（config 走 jsonb） | 开发中 |
+
 ---
 
 ## 已废弃功能子项

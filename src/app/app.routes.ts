@@ -8,6 +8,10 @@ import { BadPathRedirectComponent } from "./app-shell/bad-path-redirect";
 import { authGuard } from "./auth.guard";
 import { DashboardPageComponent } from "./pages/dashboard-page";
 import { LoginPageComponent } from "./pages/login-page";
+import { ObjectsPageComponent } from "./pages/objects-page";
+import { ParametersPageComponent } from "./pages/parameters-page";
+import { SpecialtiesPageComponent } from "./pages/specialties-page";
+import { StandardsPageComponent } from "./pages/standards-page";
 
 export const routes: Routes = [
   // Login: 独立布局（SSO orchestrator，不带 AppShell）
@@ -24,6 +28,11 @@ export const routes: Routes = [
       // legacy 路径 `/` 保留，两路由同渲染 DashboardPage。
       { path: "dashboard", component: DashboardPageComponent },
       // L-T1..L-T4 业务页按批接线（models / specifications / ... / summary）
+      // L-T1 批①：M06 检测能力主表 4 页（react 同名路径 1:1）
+      { path: "inspection-specialties", component: SpecialtiesPageComponent },
+      { path: "inspection-standards", component: StandardsPageComponent },
+      { path: "inspection-parameters", component: ParametersPageComponent },
+      { path: "inspection-objects", component: ObjectsPageComponent },
     ],
   },
 

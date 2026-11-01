@@ -59,6 +59,20 @@ export function realChainProviders(routes?: Routes): unknown[] {
   ];
 }
 
+/**
+ * 纯 HTTP 面（无 Router/Query）：直挂页组件（不走路由）的 spec 用——
+ * 组件自身只吃拦截器链，Router/QueryClient 是死重且需要路由表配置。
+ */
+export function realChainHttpProviders(): unknown[] {
+  return [
+    provideZonelessChangeDetection(),
+    provideNoopAnimations(),
+    provideHttpClient(
+      withInterceptors([apiBaseUrlInterceptor, authInterceptor, unauthorizedInterceptor]),
+    ),
+  ];
+}
+
 /** 往表单控件灌值并触发 ngModel（angular 无 fireEvent.change 的 React 合成层）。 */
 export function typeInto(
   el: HTMLInputElement | HTMLTextAreaElement,
