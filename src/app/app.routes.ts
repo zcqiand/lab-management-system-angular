@@ -6,12 +6,14 @@ import { Routes } from "@angular/router";
 import { AppShell } from "./app-shell/app-shell";
 import { BadPathRedirectComponent } from "./app-shell/bad-path-redirect";
 import { authGuard } from "./auth.guard";
+import { CalculationMethodsPageComponent } from "./pages/calculation-methods-page";
 import { DashboardPageComponent } from "./pages/dashboard-page";
 import { LoginPageComponent } from "./pages/login-page";
 import { ObjectsPageComponent } from "./pages/objects-page";
 import { ParametersPageComponent } from "./pages/parameters-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
 import { StandardsPageComponent } from "./pages/standards-page";
+import { TechnicalRequirementsPageComponent } from "./pages/technical-requirements-page";
 
 export const routes: Routes = [
   // Login: 独立布局（SSO orchestrator，不带 AppShell）
@@ -33,6 +35,20 @@ export const routes: Routes = [
       { path: "inspection-standards", component: StandardsPageComponent },
       { path: "inspection-parameters", component: ParametersPageComponent },
       { path: "inspection-objects", component: ObjectsPageComponent },
+      // L-T1 批②：M06.F05 计算方法 + M06.F06 技术要求（react 同名路径 1:1；
+      // V016 菜单双路径：calculation-methods / calculation-rules 同渲染）
+      {
+        path: "inspection-calculation-methods",
+        component: CalculationMethodsPageComponent,
+      },
+      {
+        path: "inspection-calculation-rules",
+        component: CalculationMethodsPageComponent,
+      },
+      {
+        path: "inspection-technical-requirements",
+        component: TechnicalRequirementsPageComponent,
+      },
     ],
   },
 
