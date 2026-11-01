@@ -1,0 +1,15 @@
+<div class="wrap">
+  <mat-card class="card">
+    <div class="head">
+      <mat-icon>science</mat-icon>
+      <h1>建筑工程实验室管理系统</h1>
+      <p>SSO 登录（OAuth 2.0 授权码模式）</p>
+    </div>
+    <p class="status" data-testid="login-status">{{ status() }}</p>
+    <p class="flow">
+      流程：lab /login → saas /authorize → saas 登录 → 带 code 回 lab /login → lab 后端 换
+      token
+    </p>
+    <p class="flow">demo 后端：{{ apiMode }} · saas 身份平台：{{ saasBaseUrl }}</p>
+  </mat-card>
+</div>

@@ -1,0 +1,48 @@
+<div class="layout">
+  @if (menusLoading()) {
+  <aside class="loading" data-testid="appshell-menu-loading">
+    <span>菜单加载中…</span>
+  </aside>
+  } @else if (menusError(); as err) {
+  <aside class="menu-error" data-testid="appshell-menu-error">
+    <h2>菜单加载失败</h2>
+    <p class="msg" data-testid="appshell-menu-error-msg">{{ err.message }}</p>
+    <p class="hint">
+      后端 /api/auth/menus miss（503 MENUS_UNAVAILABLE）；demo
+      兜底已删除，请重登或联系管理员。
+    </p>
+  </aside>
+  } @else {
+  <app-sidebar-nav [menus]="menus()" [appCode]="appCode" [appName]="appName">
+    <div sidebarFooter>
+      <app-backend-switcher />
+    </div>
+  </app-sidebar-nav>
+  }
+  <main>
+    <header>
+      <h1 data-testid="appshell-app-name">{{ appName }}</h1>
+      <div class="user-area">
+        @if (displayName()) {
+        <span class="user-name" data-testid="appshell-user-name"
+          >{{ displayName() }}</span
+        >
+        } @if (state().kind === "authenticated") {
+        <app-tenant-switcher />
+        <button
+          mat-stroked-button
+          data-fn="M01.F05.I04"
+          data-testid="logout-button"
+          (click)="onLogout()"
+        >
+          <mat-icon>logout</mat-icon>
+          登出
+        </button>
+        }
+      </div>
+    </header>
+    <section>
+      <router-outlet />
+    </section>
+  </main>
+</div>

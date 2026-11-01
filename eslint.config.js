@@ -15,7 +15,8 @@ import angular from "angular-eslint";
  * template parser 会去解析所有 .ts（ICU message 假红）。processor 也需单独挂。
  */
 export default tseslint.config(
-  { ignores: ["dist", "node_modules", "coverage", ".angular", "out-tsc"] },
+  // src/api/endpoints 为 orval 生成物（.prettierignore 同源豁免），不进 lint
+  { ignores: ["dist", "node_modules", "coverage", ".angular", "out-tsc", "src/api/endpoints"] },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...angular.configs.tsRecommended.map((c) => ({ files: ["**/*.ts"], ...c })),

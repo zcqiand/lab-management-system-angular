@@ -1,13 +1,26 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "项目已初始化，等待第一个需求",
-  "done": ["脚手架生成，门禁全绿"],
-  "next": "跑 /req <需求原话> 落第一份需求文档，同时把 docs/functions/function-tree.md 填成真实功能清单",
-  "open_questions": [],
-  "dont": [
-    "不要改 .harness/stack.json 让门变松",
-    "不要给 skip 的测试挂功能 ID"
+  "current_task": "REQ-2026-027 已闭环（X15 骨架进家族 + 首航 L0-L5 全绿 + gitlink 注册），等待第一个业务需求",
+  "done": [
+    "mold 建 angular profile + 适配器（suite commit cccfbf7/cea724d）",
+    "功能树 M/F 级镜像 shared BASE 26 F（tree_change mirror 免批，REQ-2026-027 锚）",
+    "双仓首 commit 29aaed4 + 首航收口 072552a 已推远端",
+    "首航四坑修于 mold：eslint flat config 形状（v22 configs 裸数组逐条挂 files）/tsconfig compilerOptions 层级/trace wrapper 反斜杠/fnReporter 格式",
+    "Node 24.15.0 + npm install（418 包 npmmirror），gate L0-L5 全绿（2026-10-31 实跑验证）"
   ],
-  "last_gate_passed_at": null
+  "next": "等用户 /req 提第一个需求原文 → 落 docs/requirements/ → 涉及子项 tree_change mirror 登记（I 级树不预铺）→ 红先 TDD：spec 里 import { fnTest } from '../../tests/fn' 挂 ID",
+  "open_questions": [
+    "dev server 端口 5212 仅登记未接线；首个需求若要 ng serve 联调，需先定与后端的 CORS 白名单接线（LAB_CORS_ALLOWED_ORIGINS）",
+    "lab→saas SSO 接线形态待首个登录需求定"
+  ],
+  "dont": [
+    "不要装回 jsdom ^25（jsdom ≤25 × Node 24.15 = 11 倍慢，撞 10s testTimeout，家族已全对齐 ^29.1.1；angular 用 ^30）",
+    "不要改 .harness/stack.json 让门变松",
+    "不要给 skip 的测试挂功能 ID；不要先改代码后补功能清单",
+    "不要把 tests/fnReporter.mjs 改回 .ts——reporter 由 vitest 裸 import() 加载，不经转换管线，.ts 会炸",
+    "不要把 trace wrapper（scripts/trace-test.mjs）挂到 L4——无依赖时 L4 会假绿，wrapper 只服务 trace_cmd",
+    "不要动 shared 契约单方面改形状（ADR-0029）；发现需要≠shared 先停下问人"
+  ],
+  "last_gate_passed_at": "2026-10-31"
 }

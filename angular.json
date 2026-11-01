@@ -37,7 +37,9 @@
           "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "reporters": ["default", "tests/fnReporter.mjs"]
+            "reporters": ["default", "tests/fnReporter.mjs"],
+            "setupFiles": ["tests/setup.ts"],
+            "runnerConfig": "vitest.bridge.config.ts"
           }
         }
       }

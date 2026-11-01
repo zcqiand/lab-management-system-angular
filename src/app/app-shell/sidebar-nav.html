@@ -1,0 +1,110 @@
+<aside
+  [attr.data-collapsed]="collapsed()"
+  data-fn="M01.F04.I01"
+  data-testid="sidebar-nav"
+  aria-label="主导航"
+>
+  <div class="brand" [class.expanded]="!collapsed()" [class.collapsed]="collapsed()">
+    <div class="brand-inner" [class.center]="collapsed()">
+      <div class="logo">L</div>
+      @if (!collapsed()) {
+      <div class="brand-text">
+        <h1 data-testid="sidebar-app-name">{{ appName() ?? "Lab-Management" }}</h1>
+        <p data-testid="sidebar-app-version">v{{ appVersion }}</p>
+      </div>
+      }
+    </div>
+    @if (!collapsed()) {
+    <button
+      type="button"
+      class="toggle"
+      (click)="toggleCollapsed()"
+      title="收起菜单"
+      aria-label="收起菜单"
+      aria-expanded="true"
+      data-testid="sidebar-toggle"
+    >
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    } @else {
+    <button
+      type="button"
+      class="toggle"
+      (click)="toggleCollapsed()"
+      title="展开菜单"
+      aria-label="展开菜单"
+      aria-expanded="false"
+      data-testid="sidebar-toggle"
+    >
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+    }
+  </div>
+  <nav aria-label="菜单树">
+    @if (menus() === null) {
+    <p class="hint" [class.center]="collapsed()" data-testid="sidebar-menus-loading">
+      {{ collapsed() ? "…" : "（菜单加载中）" }}
+    </p>
+    } @else if (menus()!.length === 0) {
+    <p class="hint" [class.center]="collapsed()">
+      {{ collapsed() ? "—" : "（无菜单）" }}
+    </p>
+    } @else { @for (row of rows(); track row.node.id) { @if (row.kind === "group") {
+    <div
+      class="group-header"
+      [class.first]="$first"
+      [attr.data-testid]="'sidebar-group-' + row.node.code"
+      [attr.data-group-collapsed]="row.collapsed"
+    >
+      @if (collapsed()) {
+      <span [matTooltip]="row.node.name + ' · ' + row.childCount + ' 项'">
+        <mat-icon>{{ iconOf(row.node.icon) }}</mat-icon>
+      </span>
+      } @else {
+      <button
+        type="button"
+        (click)="toggleGroup(row.node.code)"
+        [title]="row.collapsed ? '展开「' + row.node.name + '」' : '收起「' + row.node.name + '」'"
+        [attr.aria-label]="row.collapsed ? '展开「' + row.node.name + '」' : '收起「' + row.node.name + '」'"
+        [attr.aria-expanded]="!row.collapsed"
+        [attr.data-testid]="'sidebar-group-toggle-' + row.node.code"
+      >
+        <mat-icon>{{ iconOf(row.node.icon) }}</mat-icon>
+        <span class="gname">{{ row.node.name }}</span>
+        <span class="count">
+          {{ row.childCount }}
+          <mat-icon class="chev"
+            >{{ row.collapsed ? "chevron_right" : "expand_more" }}</mat-icon
+          >
+        </span>
+      </button>
+      }
+    </div>
+    } @else {
+    <div
+      class="leaf-wrap"
+      [style.marginLeft.rem]="!collapsed() && row.depth > 0 ? row.depth * 0.875 : 0"
+    >
+      <button
+        type="button"
+        class="leaf"
+        [class.selected]="selectedCode() === row.node.code"
+        [disabled]="!row.node.path && row.node.path !== ''"
+        (click)="onSelect(row.node)"
+        [attr.data-fn]="'m-' + row.node.code"
+        [attr.data-testid]="'sidebar-item-' + row.node.code"
+        [title]="collapsed() ? row.node.name : undefined"
+        [attr.aria-label]="collapsed() ? row.node.name : undefined"
+      >
+        <mat-icon>{{ iconOf(row.node.icon) }}</mat-icon>
+        @if (!collapsed()) {
+        <span class="label">{{ row.node.name }}</span>
+        }
+      </button>
+    </div>
+    } } }
+  </nav>
+  <div class="footer">
+    <ng-content select="[sidebarFooter]" />
+  </div>
+</aside>
