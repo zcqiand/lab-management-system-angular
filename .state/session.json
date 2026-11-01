@@ -1,26 +1,20 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "REQ-2026-027 已闭环（X15 骨架进家族 + 首航 L0-L5 全绿 + gitlink 注册），等待第一个业务需求",
+  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T0 已收官，L-T1 字典页批进行中",
   "done": [
-    "mold 建 angular profile + 适配器（suite commit cccfbf7/cea724d）",
-    "功能树 M/F 级镜像 shared BASE 26 F（tree_change mirror 免批，REQ-2026-027 锚）",
-    "双仓首 commit 29aaed4 + 首航收口 072552a 已推远端",
-    "首航四坑修于 mold：eslint flat config 形状（v22 configs 裸数组逐条挂 files）/tsconfig compilerOptions 层级/trace wrapper 反斜杠/fnReporter 格式",
-    "Node 24.15.0 + npm install（418 包 npmmirror），gate L0-L5 全绿（2026-10-31 实跑验证）"
+    "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层（contracts/backend-config/api-error/3 拦截器）、AuthStoreService 4 态 FSM、壳层（SidebarNav 扁平化/Tenant/Backend Switcher/BadPath/AppShell/authGuard）、LoginPage SSO orchestrator；12 测试全绿 gate L0-L5 全绿",
+    "orval 钉 7.21（v8 清 schema 实证）；tanstack/angular-query 钉 rc.5；NG8118 required input 构造期读→effect",
+    "suite f57377f harness.py 入 L4_DB_INJECT_REPOS + 14896fe gitlink 推进"
   ],
-  "next": "等用户 /req 提第一个需求原文 → 落 docs/requirements/ → 涉及子项 tree_change mirror 登记（I 级树不预铺）→ 红先 TDD：spec 里 import { fnTest } from '../../tests/fn' 挂 ID",
-  "open_questions": [
-    "dev server 端口 5212 仅登记未接线；首个需求若要 ng serve 联调，需先定与后端的 CORS 白名单接线（LAB_CORS_ALLOWED_ORIGINS）",
-    "lab→saas SSO 接线形态待首个登录需求定"
-  ],
+  "next": "L-T1：字典页批 M06.F01-F08（8 页，源=lab-react src/pages 词典域+tests/features dom 测试）。red-first：先写 fnTest spec（挂 ID 自动入 red 区）再实现。helper 面 tests/helpers/ng-test.ts+real-chain.ts 已就绪（setAuthenticated 直驱 authenticated 态）",
+  "open_questions": [],
   "dont": [
-    "不要装回 jsdom ^25（jsdom ≤25 × Node 24.15 = 11 倍慢，撞 10s testTimeout，家族已全对齐 ^29.1.1；angular 用 ^30）",
-    "不要改 .harness/stack.json 让门变松",
-    "不要给 skip 的测试挂功能 ID；不要先改代码后补功能清单",
-    "不要把 tests/fnReporter.mjs 改回 .ts——reporter 由 vitest 裸 import() 加载，不经转换管线，.ts 会炸",
-    "不要把 trace wrapper（scripts/trace-test.mjs）挂到 L4——无依赖时 L4 会假绿，wrapper 只服务 trace_cmd",
-    "不要动 shared 契约单方面改形状（ADR-0029）；发现需要≠shared 先停下问人"
+    "lab JWT 铸 token 打 /api/auth/me 必 401（membership/user 快照只由真 login 写入）——探针只打 /api/contracts；FSM 用 HttpTestingController",
+    "jsdom 测试必须 environmentOptions.url=:5201 同源（跨源 XHR 被吞）",
+    "flush login 后 permissions 请求在微任务续体才发出，expectOne 前让 tick",
+    "侧栏 localStorage 恢复禁在 constructor 读 required input（NG8118），放 effect",
+    "login-page 已删 getApiBaseUrl 未用 import；eslint ignores 已加 src/api/endpoints（orval 生成物 any）"
   ],
   "last_gate_passed_at": "2026-10-31"
 }
