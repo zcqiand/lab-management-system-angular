@@ -16,6 +16,8 @@ import { ModelsPageComponent } from "./pages/models-page";
 import { ObjectsPageComponent } from "./pages/objects-page";
 import { ParamInterfacesPageComponent } from "./pages/param-interfaces-page";
 import { ParametersPageComponent } from "./pages/parameters-page";
+import { ReceiptDetailPageComponent } from "./pages/receipt-detail-page";
+import { ReceiptsPageComponent } from "./pages/receipts-page";
 import { ReportNamesPageComponent } from "./pages/report-names-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
 import { SpecificationsPageComponent } from "./pages/specifications-page";
@@ -65,6 +67,9 @@ export const routes: Routes = [
       { path: "specifications", component: SpecificationsPageComponent },
       { path: "grades", component: GradesPageComponent },
       { path: "brands", component: BrandsPageComponent },
+      // L-T3① 批：M03.F01 接样 + M03.F09 接样单详情（react 同名路径 1:1）
+      { path: "receipts", component: ReceiptsPageComponent },
+      { path: "receipts/:id", component: ReceiptDetailPageComponent },
     ],
   },
 
