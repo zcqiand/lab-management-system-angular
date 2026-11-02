@@ -139,10 +139,22 @@ export default async function ({
 
   // 3. 铸真 JWT（HS256，claim 形状对齐 lab-nextjs src/lib/auth/jwt.ts 的 JwtClaims：
   //    { sub, iat, exp, typ: "access", iss, tenant_id }；键值现场读，不写任何文件）
+  //    tenant_id claim 真源=shared 种子行（react 2026-11-02 竞态真修批同款）：曾硬编码
+  //    "TENANT-001"，tenant_key 收口批（2026-11-01）种子迁 acme 后 token×行租户
+  //    错位 → 租户过滤全 0 行，列表页 waitFor 空态过但 ⊆ 断言快败（假红主因）。
+  const seedReceipts = JSON.parse(
+    readFileSync(resolve(SHARED, "seeds/sample_receipts.json"), "utf8"),
+  ) as Array<{ tenant_id: string }>;
+  const tenantIds = [...new Set(seedReceipts.map((r) => r.tenant_id))];
+  if (tenantIds.length !== 1 || !tenantIds[0]) {
+    throw new Error(
+      `fail-fast: seeds/sample_receipts.json tenant_id 不唯一或为空（${tenantIds.join(",") || "空"}）——token 租户 claim 无真源`,
+    );
+  }
   const secretText = readKey("LAB_JWT_SECRET");
   const issuer = readKey("LAB_JWT_ISSUER");
   const { SignJWT } = await import("jose");
-  const token = await new SignJWT({ tenant_id: "TENANT-001", typ: "access" })
+  const token = await new SignJWT({ tenant_id: tenantIds[0], typ: "access" })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject("USER-A")
     .setIssuer(issuer)
@@ -206,8 +218,8 @@ export default async function ({
     await client.query(
       `INSERT INTO contracts (id, contract_code, client_unit, project_name,
          construction_unit, witness_unit, witness, tenant_id, status, created_at, updated_at)
-       VALUES ($1, $2, '探针', '探针', '探针', '探针', '探针', 'TENANT-001', 'active', '', '')`,
-      [randomUUID(), markerCode],
+       VALUES ($1, $2, '探针', '探针', '探针', '探针', '探针', $3, 'active', '', '')`,
+      [randomUUID(), markerCode, tenantIds[0]],
     );
     try {
       const probeRes = await fetch(`${BASE}/api/contracts`, {

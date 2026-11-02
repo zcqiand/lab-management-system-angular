@@ -10,7 +10,9 @@ import { CalculationMethodsPageComponent } from "./pages/calculation-methods-pag
 import { DashboardPageComponent } from "./pages/dashboard-page";
 import { LoginPageComponent } from "./pages/login-page";
 import { ObjectsPageComponent } from "./pages/objects-page";
+import { ParamInterfacesPageComponent } from "./pages/param-interfaces-page";
 import { ParametersPageComponent } from "./pages/parameters-page";
+import { ReportNamesPageComponent } from "./pages/report-names-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
 import { StandardsPageComponent } from "./pages/standards-page";
 import { TechnicalRequirementsPageComponent } from "./pages/technical-requirements-page";
@@ -49,6 +51,9 @@ export const routes: Routes = [
         path: "inspection-technical-requirements",
         component: TechnicalRequirementsPageComponent,
       },
+      // L-T1 批③：M06.F07 报告名称 + M06.F08 参数界面（react 同名路径 1:1）
+      { path: "report-names", component: ReportNamesPageComponent },
+      { path: "param-interfaces", component: ParamInterfacesPageComponent },
     ],
   },
 
