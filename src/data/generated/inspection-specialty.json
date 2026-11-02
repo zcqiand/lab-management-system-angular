@@ -1,0 +1,92 @@
+[
+  {
+    "code": "SP01",
+    "officialNo": "一",
+    "name": "建筑材料及构配件",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 1,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP02",
+    "officialNo": "二",
+    "name": "主体结构及装饰装修",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 2,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP03",
+    "officialNo": "三",
+    "name": "钢结构",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 3,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP04",
+    "officialNo": "四",
+    "name": "地基基础",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 4,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP05",
+    "officialNo": "五",
+    "name": "建筑节能",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 5,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP06",
+    "officialNo": "六",
+    "name": "建筑幕墙",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 6,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP07",
+    "officialNo": "七",
+    "name": "市政工程材料",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 7,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP08",
+    "officialNo": "八",
+    "name": "道路工程",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 8,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "SP09",
+    "officialNo": "九",
+    "name": "桥梁及地下工程",
+    "isOfficial": true,
+    "enabled": true,
+    "sortOrder": 9,
+    "createdAt": "",
+    "updatedAt": ""
+  }
+]

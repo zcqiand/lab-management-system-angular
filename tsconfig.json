@@ -8,6 +8,7 @@
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "paths": { "@/*": ["./src/*"] },
     "skipLibCheck": true,
     "isolatedModules": true,
     "importHelpers": true,

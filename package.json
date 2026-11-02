@@ -25,7 +25,10 @@
     "@angular/platform-browser": "^22.2.0",
     "@angular/router": "^22.2.0",
     "@tanstack/angular-query": "^5.0.0-rc.5",
+    "docx-preview": "^0.4.1",
+    "docxtemplater": "^3.71.1",
     "material-icons": "^1.13.14",
+    "pizzip": "^3.3.0",
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"
   },

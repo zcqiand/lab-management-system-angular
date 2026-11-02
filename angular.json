@@ -18,7 +18,7 @@
             "browser": "src/main.ts",
             "polyfills": [],
             "tsConfig": "tsconfig.app.json",
-            "assets": [],
+            "assets": [{ "glob": "**/*", "input": "public", "output": "/" }],
             "styles": ["src/styles.css"]
           },
           "configurations": {
@@ -39,7 +39,13 @@
             "tsConfig": "tsconfig.spec.json",
             "reporters": ["default", "tests/fnReporter.mjs"],
             "setupFiles": ["tests/setup.ts"],
-            "runnerConfig": "vitest.bridge.config.ts"
+            "runnerConfig": "vitest.bridge.config.ts",
+            "include": [
+              "**/*.spec.ts",
+              "**/*.test.ts",
+              "../tests/**/*.spec.ts",
+              "../tests/**/*.test.ts"
+            ]
           }
         }
       }

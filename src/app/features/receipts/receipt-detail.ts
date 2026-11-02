@@ -5,8 +5,8 @@
 // UI 模式（对齐 REF nextjs ReceiptDetailPage）：
 //   - 接样信息表（委托书 / 工程 / 取样 / 检测类别 / 流程状态 / 报告参数等）
 //   - 流程历史时间线（M03.F09.I02，flowHistory 全部条目按 at 倒序）
-//   - 「报告预览」按钮（M03.F09.I03）→ 弹窗（本批占位壳：docx 渲染链独立切片，
-//     无模板分支语义 1:1——angular 侧 pizzip/docxtemplater/docx-preview 尚未引装）
+//   - 「报告预览」按钮（M03.F09.I03）→ 弹窗（L-T3③-tail 真化：docx 渲染链在
+//     data-entry/report-preview-modal，本组件只是 mat-dialog 薄壳宿主）
 //   - 「返回」按钮 → history back
 import { ChangeDetectionStrategy, Component, inject, signal } from "@angular/core";
 import { Location } from "@angular/common";
@@ -23,6 +23,7 @@ import { firstValueFrom } from "rxjs";
 import { PageLoadingComponent } from "../../ui/page-loading.component";
 import { FLOW_STAGE_LABELS } from "../../lib/flow-labels";
 import { ReceiptsService } from "../../../api/endpoints/receipts/receipts.service";
+import { ReportPreviewModalComponent } from "../data-entry/report-preview-modal";
 import type { FlowAction } from "../../../api/endpoints/model/flowAction";
 import type { SampleReceipt } from "../../../api/endpoints/model/sampleReceipt";
 
@@ -255,48 +256,42 @@ export class ReceiptDetailComponent {
     if (!r) return;
     void this.dialog.open(ReportPreviewDialogComponent, {
       width: "72rem",
-      data: { code: r.commissionCode, categoryCode: r.categoryCode },
+      data: { receipt: r },
     });
   }
 }
 
 /**
- * 报告预览弹窗（占位壳）。react 完整链 = docxtemplater 填充 → docx-preview 渲染，
- * 依赖 pizzip/docxtemplater/docx-preview + 30 个 docx 模板 —— angular 侧独立切片
- * 引装，本批只保 1:1 的外壳语义：标题「报告预览 — {委托书编号}」+ 无模板分支文案。
+ * 报告预览弹窗宿主（mat-dialog 薄壳）。真链路在 data-entry 域的
+ * ReportPreviewModalComponent（docxtemplater 填充 → docx-preview 渲染，
+ * REQ-2026-031 L-T3③-tail 真化）；标题「报告预览 — {委托书编号}」由其内部
+ * header 提供（react ReportPreviewModal 同源），无模板分支语义 1:1。
  */
 @Component({
   selector: "app-report-preview-dialog",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatDialogModule, MatButtonModule],
+  imports: [MatDialogModule, ReportPreviewModalComponent],
   template: `
-    <h2 mat-dialog-title>报告预览 — {{ data.code }}</h2>
-    <mat-dialog-content>
-      <!-- @entry M03.F09.I03 报告预览（无模板分支：react pickTemplateUrl null 同语义） -->
-      <div class="no-template">
-        当前报告类别（{{ data.categoryCode || "—" }}）暂无报告模板。
-        <br />
-        仅「混凝土抗压强度」类别支持预览，其他报告名称需要先在 data/templates
-        下放入对应模板并注入占位符。
-      </div>
+    <mat-dialog-content class="preview-host">
+      <app-report-preview-modal
+        [open]="true"
+        [receipt]="data.receipt"
+        (closed)="ref.close()"
+      />
     </mat-dialog-content>
-    <mat-dialog-actions align="end">
-      <button mat-button (click)="ref.close()">关闭</button>
-    </mat-dialog-actions>
   `,
   styles: [
     `
-      .no-template {
-        padding: 2.5rem 1rem;
-        text-align: center;
-        color: #6b7280;
-        font-size: 0.875rem;
+      .preview-host {
+        margin: 0;
+        padding: 0;
+        max-height: 94vh;
       }
     `,
   ],
 })
 export class ReportPreviewDialogComponent {
-  readonly data: { code: string; categoryCode: string } = inject(MAT_DIALOG_DATA);
+  readonly data: { receipt: SampleReceipt } = inject(MAT_DIALOG_DATA);
   readonly ref = inject<MatDialogRef<ReportPreviewDialogComponent, void>>(MatDialogRef);
 }

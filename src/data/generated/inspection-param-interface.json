@@ -1,0 +1,262 @@
+[
+  {
+    "code": "default",
+    "name": "默认四格卡",
+    "componentPath": "default",
+    "description": "检测依据 / 技术要求 / 检测结果 / 单项评定",
+    "sortOrder": 1,
+    "isOfficial": true,
+    "config": null,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "concrete-compress",
+    "name": "混凝土抗压",
+    "componentPath": "concrete-compress",
+    "description": "N 试件破坏荷载 → 抗压强度 → 代表值；无技术要求/单项评定",
+    "sortOrder": 2,
+    "isOfficial": true,
+    "config": {
+      "specimenCount": 3,
+      "area": 22500
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "concrete-permeability",
+    "name": "混凝土抗渗性能",
+    "componentPath": "concrete-permeability",
+    "description": "6 试件渗水压力 + 渗水情况 → 抗渗等级（按 GB/T 50082-2009）；无技术要求/单项评定",
+    "sortOrder": 3,
+    "isOfficial": true,
+    "config": null,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "cement-flexural",
+    "name": "水泥胶砂抗折强度",
+    "componentPath": "cement-flexural",
+    "description": "3 试件破坏荷载(kN) → 抗折强度(Rf=1.5·F·L/b³) → ±10% 剔除均值 → 单项评定（GB/T 17671）",
+    "sortOrder": 4,
+    "isOfficial": true,
+    "config": {
+      "specimenCount": 3,
+      "span": 100,
+      "width": 40
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "cement-compress",
+    "name": "水泥胶砂抗压强度",
+    "componentPath": "cement-compress",
+    "description": "6 试件破坏荷载(kN) → 抗压强度(Rc=F/A) → ±10% 剔除均值 → 单项评定（GB/T 17671）",
+    "sortOrder": 5,
+    "isOfficial": true,
+    "config": {
+      "specimenCount": 6,
+      "area": 1600
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-welding-tensile",
+    "name": "钢筋焊接接头抗拉强度",
+    "componentPath": "rebar-welding-tensile",
+    "description": "1 样品 = 3 试件：最大荷重(kN) → 抗拉强度 Rm=4000·F/(π·22²) (MPa，规格 Φ22 硬编码不录入) / 断口距(mm) / 断裂特征；3 试件共享 1 条技术要求 → 单项评定（JGJ/T 27-2014，无 ±10% 剔除）",
+    "sortOrder": 6,
+    "isOfficial": true,
+    "config": null,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-welding-bend",
+    "name": "钢筋焊接接头弯曲性能",
+    "componentPath": "rebar-welding-bend",
+    "description": "4 试件 × 3 次试验：弯曲角度 + 合格/不合格；输出模板 wq0/wq·/wq1（wq· 中点位是模板字面量）",
+    "sortOrder": 7,
+    "isOfficial": true,
+    "config": null,
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-tensile",
+    "name": "钢筋力学性能抗拉强度",
+    "componentPath": "rebar-mech-numeric",
+    "description": "钢筋力学性能抗拉强度（GB/T 228.1）：2 组 最大力(kN)+公称直径 → 抗拉强度 Rm=4000·F/(π·d²)；无断口距/断裂特征。组数取 calcRule.specimenCount。",
+    "sortOrder": 8,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "tensile_strength",
+      "needsDiameter": true,
+      "inputLabel": "最大力 (kN)",
+      "valueLabel": "抗拉强度 (MPa)",
+      "specimenCount": 2
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-yield",
+    "name": "钢筋力学性能屈服强度",
+    "componentPath": "rebar-mech-numeric",
+    "description": "钢筋力学性能屈服强度（GB/T 228.1）：2 组 屈服力(kN)+公称直径 → 屈服强度。",
+    "sortOrder": 9,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "yield_strength",
+      "needsDiameter": true,
+      "inputLabel": "屈服力 (kN)",
+      "valueLabel": "屈服强度 (MPa)",
+      "specimenCount": 2
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-elongation",
+    "name": "断后伸长率+最大力总伸长率",
+    "componentPath": "rebar-mech-numeric",
+    "description": "断后伸长率（%）：2 组直接录入 → 均值。同时承载最大力总伸长率 Agt（%）：2 组直接录入 → 均值。",
+    "sortOrder": 10,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "passthrough",
+      "needsDiameter": false,
+      "inputLabel": "断后伸长率 (%) / 最大力总伸长率 (%)",
+      "valueLabel": "断后伸长率 / 最大力总伸长率 (%)",
+      "specimenCount": 2
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-yield-ratio",
+    "name": "强屈比+超强比",
+    "componentPath": "rebar-mech-numeric",
+    "description": "强屈比：2 组 抗拉[i]/屈服[i]，由同样品 IP-0087/IP-0086 记录联立自动计算；缺值回退手动。同时承载超强比：2 组 实测屈服[i]/标准屈服值（IP-0086 技术要求 minValue）。",
+    "sortOrder": 12,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "ratio_tensile_over_yield",
+      "needsDiameter": false,
+      "valueLabel": "强屈比 / 超强比",
+      "specimenCount": 2
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-connection-tensile",
+    "name": "机械连接抗拉强度",
+    "componentPath": "rebar-mech-numeric",
+    "description": "钢筋机械连接接头抗拉强度（JGJ 107）：3 试件 最大力(kN)+公称直径 → 抗拉强度；每试件记录断裂位置（母材/接头/热影响区/其他）。",
+    "sortOrder": 14,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "tensile_strength",
+      "needsDiameter": true,
+      "inputLabel": "最大力 (kN)",
+      "valueLabel": "抗拉强度 (MPa)",
+      "specimenCount": 3,
+      "connectionMode": true,
+      "fractureLocationOptions": ["母材断裂", "断于接头", "热影响区断裂", "其他"]
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "rebar-mech-connection-yield",
+    "name": "机械连接屈服强度",
+    "componentPath": "rebar-mech-numeric",
+    "description": "钢筋机械连接接头屈服强度（JGJ 107）：3 试件 屈服力(kN)+公称直径 → 屈服强度；屈服不涉及断裂位置，故无 connectionMode。",
+    "sortOrder": 13,
+    "isOfficial": true,
+    "config": {
+      "formulaKey": "yield_strength",
+      "needsDiameter": true,
+      "inputLabel": "屈服力 (kN)",
+      "valueLabel": "屈服强度 (MPa)",
+      "specimenCount": 3
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "particle-gradation",
+    "name": "颗粒级配",
+    "componentPath": "particle-gradation",
+    "description": "砂/碎卵石颗粒级配：多行样品，每行 7-12 个筛孔分计筛余；自动算累计筛余 + 细度模数",
+    "sortOrder": 11,
+    "isOfficial": true,
+    "config": {
+      "sampleRows": 2,
+      "gravel": false,
+      "sieveCount": 7
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "mortar-compress",
+    "name": "砂浆抗压强度",
+    "componentPath": "concrete-compress",
+    "description": "建筑砂浆抗压强度：70.7mm 立方体（承压面积 5000mm²）3 试件破坏荷载 → 抗压强度 → 代表值",
+    "sortOrder": 15,
+    "isOfficial": true,
+    "config": {
+      "specimenCount": 3,
+      "area": 5000
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "soil-compaction",
+    "name": "土工击实",
+    "componentPath": "soil-compaction",
+    "description": "击实曲线：N 组（干密度 g/cm³ + 含水率 %），自动求最大干密度与最优含水率（二次拟合峰值）",
+    "sortOrder": 16,
+    "isOfficial": true,
+    "config": {
+      "pointCount": 5
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "soil-compaction-degree-sand",
+    "name": "土工压实度（灌砂法）",
+    "componentPath": "soil-compaction-degree",
+    "description": "逐试样录入：湿密度 + 含水率 → 干密度 → 压实度（对最大干密度）；灌砂法不显示最大干密度列",
+    "sortOrder": 17,
+    "isOfficial": true,
+    "config": {
+      "rowCount": 6,
+      "showMaxDensityColumn": false
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "code": "soil-compaction-degree-ring",
+    "name": "土工压实度（环刀法）",
+    "componentPath": "soil-compaction-degree",
+    "description": "逐试样录入：湿密度 + 平均含水率 → 干密度 → 压实度；环刀法逐行显示最大干密度列",
+    "sortOrder": 18,
+    "isOfficial": true,
+    "config": {
+      "rowCount": 6,
+      "showMaxDensityColumn": true
+    },
+    "createdAt": "",
+    "updatedAt": ""
+  }
+]

@@ -1,0 +1,2123 @@
+[
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 1346-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 1346-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P13",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P13",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P13",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P13",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P15",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P15",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P15",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P15",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P2",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P2",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P2",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P2",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP02-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P1",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P2",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P2",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P2",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P2",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P3",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P3",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P3",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P3",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P4",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P6",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P7",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P9",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P9",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P9",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P9",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P10",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P10",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P10",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P10",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-风机盘管机组",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-风机盘管机组",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-风机盘管机组",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-风机盘管机组",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-采暖散热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-采暖散热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-采暖散热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-采暖散热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-绝热材料",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-绝热材料",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-绝热材料",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P11-绝热材料",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-照明光源",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-照明光源",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-照明光源",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-照明光源",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-灯具",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-灯具",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-灯具",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-灯具",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-设备",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-设备",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-设备",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P12-设备",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能集热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能集热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能集热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能集热器",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能热利用系统的太阳能集热系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏组件",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏组件",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏组件",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏组件",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏发电系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏发电系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏发电系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP05-P13-太阳能光伏发电系统",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P8",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P9",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P9",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P9",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P9",
+    "inspectionStandardCode": "GB 175-2023",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P11",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P11",
+    "inspectionStandardCode": "GB 1499.2-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P11",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P11",
+    "inspectionStandardCode": "GB/T 228.1-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P14",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P14",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P14",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP07-P14",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP08-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP08-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP08-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP08-P5",
+    "inspectionStandardCode": "GB/T 50081-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "JTG 3420-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "JTG 3420-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "SL/T 352-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "SL/T 352-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50082-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB/T 50082-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GBJ 82-85",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "JGJ/T 70-2009",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "JGJ/T 70-2009",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "SL/T 352-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "SL/T 352-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "DB33/T 1095 -2013",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P8",
+    "inspectionStandardCode": "GB/T 25181-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 13788-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 1499.1-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 50204-2015",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 50204-2015",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 1499.1-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 1499.2-2007",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 21839-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 228-2002",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 232-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 28900-2022",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "Q/ZTG 001-2025",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "Q/ZTG 001-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "T/ZBTA 02-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "T/ZBTA 02-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB 55008-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 42901-2023",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JG/T 163-2013",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JG/T 163-2013",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JGJ 107-2016",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JGJ 107-2016",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 2651-2023",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "GB/T 2653-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JGJ 18-2012",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P2",
+    "inspectionStandardCode": "JGJ/T 27-2014",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 1345-2005",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 176-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 17671-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 17671-2021",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 200-2017",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 2015-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 2015-2017",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 208-2014",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 21372-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 2419-2005",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 3183-2025",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 3183-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "GB/T 8074-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "JC/T 600-2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "JTG 3420-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "JTG 3420-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "TB 10424-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P1",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "GB/T 14684-2022",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "GB/T 14684-2022",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "JG/T 494-2016",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "JG/T 494-2016",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "JGJ 52-2006",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "JGJ 52-2006",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "TB 10424-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-细骨料",
+    "inspectionStandardCode": "GB 55008-2021",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "GB/T 14685-2022",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "GB/T 14685-2022",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "TB 10424-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "JGJ 52-2006",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P3-粗骨料",
+    "inspectionStandardCode": "JGJ 52-2006",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB 13544-2000",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 11945-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 13544-2011",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 13545 - 2014",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 21144-2023",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 24492-2009",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 2542-2012",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 25779 - 2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 26538-2011",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 4111-2013",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 5101-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "JC 943-2004",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "NY/T 671-2025",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 11969-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 11968-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 11969-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 15762-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB 18967-2009",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB 50208-2011",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB 55030-2022",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 18242-2025",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 18242-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 326-2007",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.10-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.11-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.14-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.18-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.20-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.26-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.4-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB/T 328.8-2007",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB18242-2008",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB18242-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB18243-2008",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "GB18243-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水卷材",
+    "inspectionStandardCode": "JC/T 690-2008",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水涂料",
+    "inspectionStandardCode": "GB/T 16777-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水涂料",
+    "inspectionStandardCode": "JC/T 2428-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水涂料",
+    "inspectionStandardCode": "JC/T 408-2005",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水涂料",
+    "inspectionStandardCode": "JC/T 864-2023",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB 18173.4-2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 18173.2-2014",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 18173.3-2014",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 18173.3-2014",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 31061-2014",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 39693.4-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 528-2009",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P10-防水密封材料及其他防水材料",
+    "inspectionStandardCode": "GB/T 531.1-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "GB/T 50123-2019",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "GB/T 50123-2019",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "JTG 3430-2020",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "JTG 3430-2020",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "JTG 3441-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P9",
+    "inspectionStandardCode": "JTG 3441-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB 8076-2008",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB 23439-2009",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB 6566-2010",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 176-2025",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 18046-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 208-2014",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 8074-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "JTG 3432-2024",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "JTG 3432-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "JTG F40-2004",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "TB∕T 3275-2018",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 1596-2017",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 1596-2017",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 51003-2014",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 1345-2005",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P7",
+    "inspectionStandardCode": "GB/T 1346-2024",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 10294-2008",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P4",
+    "inspectionStandardCode": "GB/T 10294-2008",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB 50119-2013",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P5",
+    "inspectionStandardCode": "GB 50119-2013",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB 50119-2013",
+    "role": "TESTING",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "inspectionObjectCode": "OBJ-SP01-P6",
+    "inspectionStandardCode": "GB 50119-2013",
+    "role": "JUDGMENT",
+    "createdAt": "",
+    "updatedAt": ""
+  }
+]
