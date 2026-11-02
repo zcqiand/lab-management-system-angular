@@ -1,16 +1,14 @@
-// DashboardPage — L-T0 占位（route 已占坑，侧栏点进去不 404）。
-// react 版是 SummaryList 真页面（/ 与 /dashboard 同渲染），本批随报告流批
-//（L-T4）移植为真实现；脚手架策略照 react App.tsx：未落地批次先挂 EmptyState。
+// DashboardPage — 薄 wrapper（react src/pages/DashboardPage.tsx 1:1 转写：
+// 只渲染 SummaryList；/ 与 /dashboard 两路由同渲染，V016 菜单路径对齐）。
+// M05.F01 报告汇总 + 仪表盘统计（L-T4 批真化，替代 L-T0 EmptyState 占位）。
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { EmptyStateComponent } from "../ui/empty-state.component";
+import { SummaryListComponent } from "../features/summary/summary-list";
 
 @Component({
   selector: "app-dashboard-page",
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [EmptyStateComponent],
-  template: `
-    <app-empty-state title="仪表盘" descriptionText="移植中（L-T4 报告流批落地）" />
-  `,
+  imports: [SummaryListComponent],
+  template: `<app-summary-list />`,
 })
 export class DashboardPageComponent {}

@@ -19,10 +19,15 @@ import { ParamInterfacesPageComponent } from "./pages/param-interfaces-page";
 import { ParametersPageComponent } from "./pages/parameters-page";
 import { ReceiptDetailPageComponent } from "./pages/receipt-detail-page";
 import { ReceiptsPageComponent } from "./pages/receipts-page";
+import { ReportApprovePageComponent } from "./pages/report-approve-page";
+import { ReportArchivePageComponent } from "./pages/report-archive-page";
+import { ReportIssuePageComponent } from "./pages/report-issue-page";
 import { ReportNamesPageComponent } from "./pages/report-names-page";
+import { ReportReviewPageComponent } from "./pages/report-review-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
 import { SpecificationsPageComponent } from "./pages/specifications-page";
 import { StandardsPageComponent } from "./pages/standards-page";
+import { SummaryPageComponent } from "./pages/summary-page";
 import { TaskAssignmentPageComponent } from "./pages/task-assignment-page";
 import { TechnicalRequirementsPageComponent } from "./pages/technical-requirements-page";
 
@@ -75,6 +80,12 @@ export const routes: Routes = [
       // L-T3② 批：M03.F02 任务分配 + M03.F03 数据录入（react 同名路径 1:1）
       { path: "task-assignment", component: TaskAssignmentPageComponent },
       { path: "data-entry", component: DataEntryPageComponent },
+      // L-T4 批：M03.F05-F08 报告流 4 阶段 + M05.F01 汇总（react 同名路径 1:1）
+      { path: "report-review", component: ReportReviewPageComponent },
+      { path: "report-approve", component: ReportApprovePageComponent },
+      { path: "report-issue", component: ReportIssuePageComponent },
+      { path: "report-archive", component: ReportArchivePageComponent },
+      { path: "summary", component: SummaryPageComponent },
     ],
   },
 
