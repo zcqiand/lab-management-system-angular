@@ -44,3 +44,21 @@ export type ParamCardPatch = Partial<
     "standardCode" | "requirementCode" | "requirement" | "result" | "verdict"
   >
 >;
+
+/**
+ * 钢筋力学性能「比值卡」（强屈比/超强比）跨记录联立入参：
+ * 强屈比[i] = tensileStrengths[i] / yieldStrengths[i]；
+ * 超强比[i] = yieldStrengths[i] / specStandardYield（标准屈服值 = IP-0086 技术要求 minValue）。
+ * 由 EntryModal 从同一样品已保存的 IP-0087/IP-0086 记录 + 技术要求解析而来；
+ * 缺值时卡片回退手动录入（EntryModal 本批不接线，L-T3③ 与 react 1:1 同为缺省）。
+ */
+export interface CrossRecordInput {
+  tensileStrengths?: number[];
+  yieldStrengths?: number[];
+  specStandardYield?: number;
+}
+
+/** 该参数的计算方法（M06.F05）切片——仅取 specimenCount 驱动「做几组数据」。 */
+export interface CalcRuleRef {
+  specimenCount: number;
+}

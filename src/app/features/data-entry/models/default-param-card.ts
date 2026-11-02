@@ -1,20 +1,11 @@
-// M03.F03 通用参数卡（registry 白名单之外的兜底，L-T3② 仅此一张）。
+// M03.F03 通用参数卡（registry 白名单之外的兜底）。
 // 移植自 lab-management-system-react/src/features/data-entry/models/DefaultParamCard.tsx
-//（REQ-2026-031 L-T3②，字段 4 个 1:1：检测依据/技术要求/检测结果/单项评定；
-// EntryModal 传 standards/stdParams/techReqs = []，两个下拉均为空壳占位）。
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  output,
-} from "@angular/core";
+//（REQ-2026-031 L-T3③ 归入 ParamCardBase 九键契约；字段 4 个 1:1：检测依据/技术要求/
+// 检测结果/单项评定；EntryModal 传 standards/stdParams/techReqs = []，两下拉空壳占位）。
+import { ChangeDetectionStrategy, Component, computed } from "@angular/core";
 
-import type { InspectionParameter } from "../../../../api/endpoints/model/inspectionParameter";
 import type { InspectionStandard } from "../../../../api/endpoints/model/inspectionStandard";
-import type { StandardParameterLink } from "../../../../api/endpoints/model/standardParameterLink";
-import type { TechnicalRequirement } from "../../../../api/endpoints/model/technicalRequirement";
-import type { TestRecord } from "../../../../api/endpoints/model/testRecord";
+import { ParamCardBase } from "./param-card-base";
 import { requirementLabel, techReqKey } from "./types";
 import type { ParamCardPatch } from "./types";
 
@@ -37,7 +28,7 @@ const VERDICT_OPTIONS = ["合格", "不合格", "符合", "不符合"] as const;
           <label>检测依据</label>
           <select
             [value]="record()?.standardCode ?? ''"
-            (change)="cardChange.emit({ standardCode: $any($event.target).value })"
+            (change)="emitChange({ standardCode: $any($event.target).value })"
             [disabled]="readOnly()"
           >
             <option value="">—</option>
@@ -64,7 +55,7 @@ const VERDICT_OPTIONS = ["合格", "不合格", "符合", "不符合"] as const;
           <input
             type="text"
             [value]="record()?.result ?? ''"
-            (input)="cardChange.emit({ result: $any($event.target).value })"
+            (input)="emitChange({ result: $any($event.target).value })"
             placeholder="录入检测结果"
             [readonly]="readOnly()"
           />
@@ -73,7 +64,7 @@ const VERDICT_OPTIONS = ["合格", "不合格", "符合", "不符合"] as const;
           <label>单项评定</label>
           <select
             [value]="record()?.verdict ?? ''"
-            (change)="cardChange.emit({ verdict: $any($event.target).value })"
+            (change)="emitChange({ verdict: $any($event.target).value })"
             [disabled]="readOnly()"
           >
             <option value="">未评定</option>
@@ -131,16 +122,7 @@ const VERDICT_OPTIONS = ["合格", "不合格", "符合", "不符合"] as const;
     `,
   ],
 })
-export class DefaultParamCardComponent {
-  readonly parameter = input.required<InspectionParameter>();
-  readonly record = input<TestRecord | undefined>(undefined);
-  readonly standards = input<InspectionStandard[]>([]);
-  readonly stdParams = input<StandardParameterLink[]>([]);
-  readonly techReqs = input<TechnicalRequirement[]>([]);
-  readonly readOnly = input(false);
-
-  readonly cardChange = output<ParamCardPatch>();
-
+export class DefaultParamCardComponent extends ParamCardBase {
   protected readonly verdictOptions = VERDICT_OPTIONS;
   protected readonly techReqKey = techReqKey;
   protected readonly requirementLabel = requirementLabel;
@@ -162,9 +144,13 @@ export class DefaultParamCardComponent {
 
   protected onReqChange(value: string): void {
     const found = this.reqOptions().find((r) => techReqKey(r) === value);
-    this.cardChange.emit({
+    this.emitChange({
       requirementCode: value,
       requirement: found ? requirementLabel(found) : "",
     });
+  }
+
+  protected emitChange(patch: ParamCardPatch): void {
+    this.cardChange()(patch);
   }
 }

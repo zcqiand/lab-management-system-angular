@@ -1,20 +1,25 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T0 已收官，L-T1 字典页批进行中",
+  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T3② 收官，下批 L-T3③（data-entry 域卡 11 张 + SampleExtFieldsModal + ReportPreviewModal docx 链）",
   "done": [
-    "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层（contracts/backend-config/api-error/3 拦截器）、AuthStoreService 4 态 FSM、壳层（SidebarNav 扁平化/Tenant/Backend Switcher/BadPath/AppShell/authGuard）、LoginPage SSO orchestrator；12 测试全绿 gate L0-L5 全绿",
-    "orval 钉 7.21（v8 清 schema 实证）；tanstack/angular-query 钉 rc.5；NG8118 required input 构造期读→effect",
-    "suite f57377f harness.py 入 L4_DB_INJECT_REPOS + 14896fe gitlink 推进"
+    "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层、AuthStoreService 4 态 FSM、壳层、LoginPage SSO orchestrator；gate L0-L5 全绿",
+    "L-T1 字典页批 M06.F01-F08 全批收官（40eadcf/b579c96/330481f，40 fnTest）",
+    "L-T2 码表4页 M04.F06-F09 + 合同 M02.F01 收官（df79969/0af6fee，15 fnTest）",
+    "L-T3① 接样 M03.F01+F09 收官（2aba342/c5619ae，7 fnTest）：列表三态过滤/新建编辑删除/提交推进/详情页/流程历史/报告预览壳",
+    "L-T3② 任务分配 M03.F02 + 数据录入 M03.F03 收官（13f6ffd/87d8f70，5 fnTest，gate L0-L5 全绿）：队列页×2 + 安排弹窗（receiptsAssignTask）+ EntryDialog（样品/参数双下拉+DirtyKeys 脏键守卫+create/update 分流）+ registry default 兜底卡骨架",
+    "树镜像累计：M03.F01/F09（8 行）+ M03.F02（5 行）+ M03.F03（9 行），令牌已焚；M06.F06.I03 已废弃行待人批"
   ],
-  "next": "L-T1：字典页批 M06.F01-F08（8 页，源=lab-react src/pages 词典域+tests/features dom 测试）。red-first：先写 fnTest spec（挂 ID 自动入 red 区）再实现。helper 面 tests/helpers/ng-test.ts+real-chain.ts 已就绪（setAuthenticated 直驱 authenticated 态）",
-  "open_questions": [],
-  "dont": [
-    "lab JWT 铸 token 打 /api/auth/me 必 401（membership/user 快照只由真 login 写入）——探针只打 /api/contracts；FSM 用 HttpTestingController",
-    "jsdom 测试必须 environmentOptions.url=:5201 同源（跨源 XHR 被吞）",
-    "flush login 后 permissions 请求在微任务续体才发出，expectOne 前让 tick",
-    "侧栏 localStorage 恢复禁在 constructor 读 required input（NG8118），放 effect",
-    "login-page 已删 getApiBaseUrl 未用 import；eslint ignores 已加 src/api/endpoints（orval 生成物 any）"
+  "next": "L-T3③（独立切片，建议新窗口）：data-entry 域卡 11 张移植——react 源 src/features/data-entry/models/（3525 行：CementCompress/CementFlexural/ConcreteCompress/ConcretePermeability/RebarWeldingTensile/Bend/RebarMechNumeric/ParticleGradation/SoilCompaction/Degree + StrengthCardBase + cement-strength/rebar-mechanics/rebar-welding 算法模块 + resolveInterfaceByParam + registry 扩容 12 卡）；测试 tests/features/data-entry/ 6 文件 1014 行（cementStrength/concreteCards/particleGradation/rebarMech/rebarWelding/soilCards .dom.test.tsx）。red-first：先移植 6 个 spec → 跑红留证 _work/lt3c-red.log → 实现 → 绿 → gate → 双提交。react registry 中 particle-gradation 卡有 `as unknown as ParamModelComponent` cast，angular 侧 NgComponentOutlet inputs 键须逐卡核对（ParamModelProps → cardInputs）。另含 SampleExtFieldsModal（接样单 ext 字段补录，M03.F01.I07）与 ReportPreviewModal docx 渲染链（pizzip/docxtemplater/docx-preview + public/templates 59 模板）独立小片",
+  "open_questions": [
+    "M06.F06.I03 已废弃行需人批（废弃永远人裁）——下批或收官批随树操作带上"
   ],
-  "last_gate_passed_at": "2026-10-31"
+  "deprecated": [
+    "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts",
+    "jsdom 测试 url 必须 :5201 同源；zoneless waitFor 内必须 fixture.detectChanges()",
+    "长 CJK 文件 Write 会采样退化（本窗两次实证）——CJK 重文件用 python 行拼装或 Write 后 grep 回验",
+    "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀→cardChange；NgComponentOutlet 普通字段不带调用括号",
+    "npm 依赖走 registry.npmmirror.com + --legacy-peer-deps；docx 三件套（pizzip/docxtemplater/docx-preview）也走镜像"
+  ],
+  "last_gate_passed_at": "2026-11-02"
 }
