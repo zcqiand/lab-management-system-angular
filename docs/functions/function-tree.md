@@ -42,8 +42,14 @@
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M00.F01 | 当前用户会话 | 当前用户信息 + 关联租户列表 + 当前选中租户（GET /auth/me） | 规划 |
-| M00.F02 | 登录选租户 | 登录后选择租户，换发携带 tenant_id claim 的 token（POST /auth/switch-tenant） | 规划 |
+| M00.F01 | 当前用户会话 | 当前用户信息 + 关联租户列表 + 当前选中租户（GET /auth/me） | 开发中 |
+| M00.F02 | 登录选租户 | 登录后选择租户，换发携带 tenant_id claim 的 token（POST /auth/switch-tenant） | 开发中 |
+
+### M00.F01 当前用户会话
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M00.F01.I01 | 当前会话（顶栏登录用户显示名） | 接口 | 前端+后端 | GET /auth/me hydrate user/tenants/currentTenantId；顶栏显示登录用户 displayName（空串回退 username，短路或写法不兜空串） | 开发中 |
 
 ### M00.F02 登录选租户
 
@@ -55,8 +61,8 @@
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M01.F04 | 权限管理 | RBAC 角色权限、路由守卫、权限指令、动态菜单（身份平台下发） | 规划 |
-| M01.F05 | 认证管理 | OAuth 2.0 授权码 SSO（client_secret 后端持）+ lab 自家 JWT 签发，saas token 不出 lab 后端 | 规划 |
+| M01.F04 | 权限管理 | RBAC 角色权限、路由守卫、权限指令、动态菜单（身份平台下发） | 开发中 |
+| M01.F05 | 认证管理 | OAuth 2.0 授权码 SSO（client_secret 后端持）+ lab 自家 JWT 签发，saas token 不出 lab 后端 | 开发中 |
 
 ### M01.F04 权限管理
 
@@ -74,48 +80,48 @@
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M02.F01 | 合同管理 | 合同 CRUD、工程信息维护 | 规划 |
+| M02.F01 | 合同管理 | 合同 CRUD、工程信息维护 | 开发中 |
 
 ## M03 试验过程管理
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M03.F01 | 接样管理 | 接样单 CRUD、报告类别关联、流程状态 | 规划 |
-| M03.F02 | 任务分配 | 接样提交后安排检测人员/计划日期，提交进入数据录入；任务字段挂 SampleReceipt | 规划 |
-| M03.F03 | 数据录入 | 样品检测数据录入 | 规划 |
-| M03.F05 | 报告审核 | 报告审核流程 | 规划 |
-| M03.F06 | 报告批准 | 报告批准流程 | 规划 |
-| M03.F07 | 报告发放 | 报告发放流程 | 规划 |
-| M03.F08 | 报告归档 | 报告归档流程 | 规划 |
-| M03.F09 | 接样单详情 | 接样单查看（接样信息+样品信息+检测数据） | 规划 |
+| M03.F01 | 接样管理 | 接样单 CRUD、报告类别关联、流程状态 | 开发中 |
+| M03.F02 | 任务分配 | 接样提交后安排检测人员/计划日期，提交进入数据录入；任务字段挂 SampleReceipt | 开发中 |
+| M03.F03 | 数据录入 | 样品检测数据录入 | 开发中 |
+| M03.F05 | 报告审核 | 报告审核流程 | 开发中 |
+| M03.F06 | 报告批准 | 报告批准流程 | 开发中 |
+| M03.F07 | 报告发放 | 报告发放流程 | 开发中 |
+| M03.F08 | 报告归档 | 报告归档流程 | 开发中 |
+| M03.F09 | 接样单详情 | 接样单查看（接样信息+样品信息+检测数据） | 开发中 |
 
 ## M04 基础数据
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M04.F06 | 型号维护 | InspectionModel 实体码表维护，列表按检测专项过滤 | 规划 |
-| M04.F07 | 规格维护 | InspectionSpec 实体码表维护，列表按检测专项过滤 | 规划 |
-| M04.F08 | 等级维护 | InspectionGrade 实体码表维护，列表按检测专项过滤 | 规划 |
-| M04.F09 | 牌号维护 | InspectionBrand 实体码表维护，列表按检测专项过滤 | 规划 |
+| M04.F06 | 型号维护 | InspectionModel 实体码表维护，列表按检测专项过滤 | 开发中 |
+| M04.F07 | 规格维护 | InspectionSpec 实体码表维护，列表按检测专项过滤 | 开发中 |
+| M04.F08 | 等级维护 | InspectionGrade 实体码表维护，列表按检测专项过滤 | 开发中 |
+| M04.F09 | 牌号维护 | InspectionBrand 实体码表维护，列表按检测专项过滤 | 开发中 |
 
 ## M05 数据统计
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M05.F01 | 报告汇总 | 按报告类别输出试验报告汇总表 | 规划 |
+| M05.F01 | 报告汇总 | 按报告类别输出试验报告汇总表 | 开发中 |
 
 ## M06 检测能力
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M06.F01 | 检测专项 | InspectionSpecialty CRUD（检测能力字典根） | 规划 |
-| M06.F02 | 检测项目 | InspectionObject CRUD + 专项/参数关联 | 规划 |
-| M06.F03 | 检测参数 | InspectionParameter CRUD + 标准/参数关联 | 规划 |
-| M06.F04 | 检测标准 | InspectionStandard CRUD（含状态：active/superseded/draft） | 规划 |
-| M06.F05 | 计算方法 | CalculationMethod 维护（复合主键，算法类型 + 公式） | 规划 |
-| M06.F06 | 技术要求 | TechnicalRequirement 维护，按四维度匹配；brand/model/grade/spec 改为 FK 引用实体 | 规划 |
-| M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 规划 |
-| M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 规划 |
+| M06.F01 | 检测专项 | InspectionSpecialty CRUD（检测能力字典根） | 开发中 |
+| M06.F02 | 检测项目 | InspectionObject CRUD + 专项/参数关联 | 开发中 |
+| M06.F03 | 检测参数 | InspectionParameter CRUD + 标准/参数关联 | 开发中 |
+| M06.F04 | 检测标准 | InspectionStandard CRUD（含状态：active/superseded/draft） | 开发中 |
+| M06.F05 | 计算方法 | CalculationMethod 维护（复合主键，算法类型 + 公式） | 开发中 |
+| M06.F06 | 技术要求 | TechnicalRequirement 维护，按四维度匹配；brand/model/grade/spec 改为 FK 引用实体 | 开发中 |
+| M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 开发中 |
+| M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 开发中 |
 
 ### M06.F01 检测专项
 
@@ -168,6 +174,8 @@
 |---|---|---|---|---|---|
 | M06.F06.I01 | 技术要求列表（多维过滤） | 页面 | 前端+后端 |  | 开发中 |
 | M06.F06.I02 | 新建/编辑技术要求 | 按钮 | 前端+后端 |  | 开发中 |
+| M06.F06.I03 | 创建技术要求 | 接口 | 前端+后端 | BASE 编号对齐：POST /api/technical-requirements：tenant 从 token claim 注入；默认值 numeric/≥/manual/draft（react 旧 I03 删除语义已迁 I05，react 已废弃行不入镜像） | 开发中 |
+| M06.F06.I04 | 更新技术要求 | 接口 | 前端+后端 | BASE 编号对齐：PUT /api/technical-requirements/{object}/{param}/{standard}：PATCH 语义 | 开发中 |
 | M06.F06.I05 | 删除技术要求（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/technical-requirements/{object}/{param}/{standard}（实现即原 M06.F06.I03） | 开发中 |
 
 ### M06.F07 报告名称
