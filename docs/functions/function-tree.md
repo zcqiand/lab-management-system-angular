@@ -255,6 +255,30 @@
 | M03.F09.I02 | 流程历史时间线 | 查询 | 前端+后端 |  | 开发中 |
 | M03.F09.I03 | 报告预览 | 按钮 | 仅前端 |  | 开发中 |
 
+### M03.F02 任务分配（安排检测人员/计划日期）
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M03.F02.I01 | 任务分配队列 | 页面 | 前端+后端 |  | 开发中 |
+| M03.F02.I02 | 安排/取消检测人员与计划日期 | 按钮 | 前端+后端 |  | 开发中 |
+| M03.F02.I03 | 任务取消（清空分配） | 接口 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate，把已分配单子在本阶段重置为未分配（非退回接样；退回接样走 FlowStagePage 通用退回按钮） | 开发中 |
+| M03.F02.I04 | 任务分配三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表 | 开发中 |
+| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/assigning/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；7 阶段全 act 模式） | 开发中 |
+
+### M03.F03 数据录入（样品检测数据 + 人工改判）
+
+| 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
+|---|---|---|---|---|---|
+| M03.F03.I01 | 样品 + 检测数据录入页 | 页面 | 前端+后端 |  | 开发中 |
+| M03.F03.I02 | 保存检测记录 | 按钮 | 前端+后端 |  | 开发中 |
+| M03.F03.I03 | 人工改判 verdict | 按钮 | 前端+后端 |  | 开发中 |
+| M03.F03.I04 | 更新样品 | 接口 | 前端+后端 | PUT /api/samples/{id}：PATCH 语义 | 开发中 |
+| M03.F03.I06 | 检测记录列表 | 接口 | 前端+后端 | GET /api/test-records?sampleId=&page=&pageSize=：tenant 收口 + sampleId 过滤 + 分页；data-fn=nextjs/react/vue 仓 test-records 页面 | 开发中 |
+| M03.F03.I07 | 检测记录详情 | 接口 | 前端+后端 | GET /api/test-records/{id}：返回 TestRecord | 开发中 |
+| M03.F03.I08 | 创建检测记录 | 接口 | 前端+后端 | POST /api/test-records：sampleId/parameterCode/requirement/result 必填；tenant 从 token claim 注入 | 开发中 |
+| M03.F03.I09 | 更新检测记录 | 接口 | 前端+后端 | PUT /api/test-records/{id}：PATCH 语义，未传字段保留 | 开发中 |
+| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/data-entry/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I13 退回/I14 撤回语义并入本行；7 阶段全 act 模式） | 开发中 |
+
 ---
 
 ## 已废弃功能子项

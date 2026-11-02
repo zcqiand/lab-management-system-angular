@@ -9,6 +9,7 @@ import { authGuard } from "./auth.guard";
 import { BrandsPageComponent } from "./pages/brands-page";
 import { CalculationMethodsPageComponent } from "./pages/calculation-methods-page";
 import { ContractsPageComponent } from "./pages/contracts-page";
+import { DataEntryPageComponent } from "./pages/data-entry-page";
 import { DashboardPageComponent } from "./pages/dashboard-page";
 import { GradesPageComponent } from "./pages/grades-page";
 import { LoginPageComponent } from "./pages/login-page";
@@ -22,6 +23,7 @@ import { ReportNamesPageComponent } from "./pages/report-names-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
 import { SpecificationsPageComponent } from "./pages/specifications-page";
 import { StandardsPageComponent } from "./pages/standards-page";
+import { TaskAssignmentPageComponent } from "./pages/task-assignment-page";
 import { TechnicalRequirementsPageComponent } from "./pages/technical-requirements-page";
 
 export const routes: Routes = [
@@ -70,6 +72,9 @@ export const routes: Routes = [
       // L-T3① 批：M03.F01 接样 + M03.F09 接样单详情（react 同名路径 1:1）
       { path: "receipts", component: ReceiptsPageComponent },
       { path: "receipts/:id", component: ReceiptDetailPageComponent },
+      // L-T3② 批：M03.F02 任务分配 + M03.F03 数据录入（react 同名路径 1:1）
+      { path: "task-assignment", component: TaskAssignmentPageComponent },
+      { path: "data-entry", component: DataEntryPageComponent },
     ],
   },
 
