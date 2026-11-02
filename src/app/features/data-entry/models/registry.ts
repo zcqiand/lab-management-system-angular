@@ -1,5 +1,5 @@
-// 参数界面模型注册表（M03.F03）。L-T3③ 扩容中：default + cement 双卡 + concrete 双卡
-// + welding 双卡 + rebar-mech + particle 已进；余 soil 双卡随族陆续进。
+// 参数界面模型注册表（M03.F03）。满版 12 槽：default + 11 具体卡（cement 双卡 /
+// concrete 双卡 / welding 双卡 / rebar-mech / particle / soil 双卡）。
 // 移植自 lab-management-system-react/src/features/data-entry/models/registry.ts
 //（REQ-2026-031 L-T3③；resolve 未命中回退 default 语义 1:1）。
 import type { Type } from "@angular/core";
@@ -13,6 +13,8 @@ import { RebarWeldingTensileCardComponent } from "./rebar-welding-tensile-card";
 import { RebarWeldingBendCardComponent } from "./rebar-welding-bend-card";
 import { RebarMechNumericCardComponent } from "./rebar-mech-numeric-card";
 import { ParticleGradationCardComponent } from "./particle-gradation-card";
+import { SoilCompactionCardComponent } from "./soil-compaction-card";
+import { SoilCompactionDegreeCardComponent } from "./soil-compaction-degree-card";
 
 export type ParamModelComponent = Type<unknown>;
 
@@ -26,6 +28,8 @@ export const MODEL_REGISTRY: Record<string, ParamModelComponent> = {
   "rebar-welding-bend": RebarWeldingBendCardComponent,
   "rebar-mech-numeric": RebarMechNumericCardComponent,
   "particle-gradation": ParticleGradationCardComponent,
+  "soil-compaction": SoilCompactionCardComponent,
+  "soil-compaction-degree": SoilCompactionDegreeCardComponent,
 };
 
 export function resolveParamInterfaceModel(key?: string): ParamModelComponent {
