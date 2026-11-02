@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T4 报告流收官（M03.F05-F08 + M05.F01，gate L0-L5 全绿），下批 L-T5 收官",
+  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T5 收官批完成：代码批 L-T0..L-T4 全落 + 树核销 1653ef0，业务路由 26↔26 1:1，gate 本仓 L0-L5 全绿（138 条目）",
   "done": [
     "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层、AuthStoreService 4 态 FSM、壳层、LoginPage SSO orchestrator；gate L0-L5 全绿",
     "L-T1 字典页批 M06.F01-F08 全批收官（40eadcf/b579c96/330481f，40 fnTest）",
@@ -10,14 +10,17 @@
     "L-T3② 任务分配 M03.F02 + 数据录入 M03.F03 收官（13f6ffd/87d8f70，5 fnTest）",
     "L-T3③ 域卡满版批收官（7b98079③a→c2eba64 lint，gate 全绿 d719673）：ParamCardBase 九键契约 + 11 具体卡 + registry 满版 12 槽；models 55/55 绿",
     "L-T3③-tail 收官（e071849，gate 全绿）：SampleExtFieldsModal（M03.F01.I07）+ ReportPreviewModal docx 渲染链真化 + src/data/templates 整迁 + tests/infrastructure-anchors",
-    "L-T4 报告流批收官（42fdf5e，gate L0-L5 全绿 135 条目）：①ReportPhasePage 共享组件（stage/submitLabel/i01/i02 四 input + afterNextRender 首载）+ 4 page wrapper（审核/批准/发放/归档，多选批量 submit + 退回 MatDialog）②SummaryList（/summary+/dashboard+/ 同渲染：动态列汇总表+统计五卡+I03 三卡+I04 漏斗）③树镜像登记 M03.F05-F08 各四行 + M05.F01 六行（mirror 免批 --apply，22 行非废弃全量）④15 fnTest + 全量 129/129 绿"
+    "L-T4 报告流批收官（42fdf5e，gate L0-L5 全绿 135 条目）：ReportPhasePage 共享组件 + 4 page wrapper（审核/批准/发放/归档）+ SummaryList（/summary+/dashboard+/ 同渲染）+ 树镜像 22 行 + 15 fnTest，全量 129/129 绿",
+    "L-T5 树核销收官（1653ef0，gate 138 条目全绿）：①F 级 26 行 规划→开发中（mirror 免批②，--apply 焚令牌 da993b2→cd1eed8）②镜像登记 M00.F01.I01（当前用户会话）+ M06.F06.I03（创建技术要求）/I04（更新技术要求）——采用 shared BASE 编号，react 已废弃 legacy I03 行不入镜像（废弃行不入镜像惯例），故无废弃人批动作③后端探针旁证：铸 JWT 打 /api/receipts?flowStatus=review 200 total=30",
+    "路由 parity 复核：react 26 业务路由 ↔ angular 26 一一对应（仅 `*` vs `**` 404 语法差异）"
   ],
-  "next": "L-T5 收官批：①树推进 mirror 核销（--apply 推进开发中/GA 翻转凭 REQ 验收记录；M03.F05-F08/M05.F01 F 级仍规划）②gate --all ③/handoff ④M06.F06.I03 已废弃行人批（废弃永远人裁）⑤遗留：lab-react L4 竞态真修搭车候选",
+  "next": "REQ-2026-031 收官仅剩人工环节：①GA 翻转（26 F 级+模块行 开发中→已上线）待人在 docs/requirements/REQ-2026-031 文档记「人工验收…通过」后另行 mirror 提案（GA_ACCEPT_RE 匹配该句才放行）②人工 live 验收全功能走查。可选搭车：lab-react L4 竞态真修（未提交，另批）",
   "open_questions": [
-    "M06.F06.I03 已废弃行需人批（废弃永远人裁）——L-T5 收官批随树操作带上"
+    "GA 翻转需人批：REQ-2026-031 文档补「人工验收…通过」记录后，才可发起 开发中→已上线 mirror 提案（AC-5 约定 GA 待人工验收记录）",
+    "gate --all（43 仓连跑）exit=2，15 仓红但全不在 lab-angular：django 系 relation tenant 不存在（库未建/未迁移）、rails/lab-react HTTP 500 与 80s+ 超时（live 后端未起 + 负载假红嫌疑）、双 react-native L5 引用完整性、django+双 harmonyos L1——属其他批次/环境问题，是否开修另批"
   ],
   "deprecated": [
-    "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts",
+    "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts 或带真登录态的端点",
     "jsdom 测试 url 必须 :5201 同源；zoneless 卡测试 native input 事件后必须 fixture.detectChanges() 才能断言 DOM 文本",
     "长 CJK 文件 Write 会采样退化——CJK 重文件 Write 后必须 grep 回验",
     "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀（cardChange/submitted/closed）；NgComponentOutlet 普通字段不带调用括号；模板 computed/signal 一律带 ()；模板禁直调全局（Number()/String()→组件方法）",
@@ -27,7 +30,8 @@
     "ng test --include 相对 src/ 解析（tests/ 目录规格须 ../tests/** 前缀，已配）；@/ 别名已配 tsconfig paths",
     "python 替换 CJK 字面量 chr(0x3000) 构造才稳；prettier --write 归一 react 拷入件属预期",
     "**input.required + constructor 直调 load = NG0950**（空表两行骗过 rows>1 假绿）——afterNextRender(() => void this.load()) 才对；**裸挂页组件 spec 必须 realChainHttpProviders()**（只给 zoneless 把 GET 打到 about:blank 数据恒空不报错）；插值 data-testid 用 [attr.data-testid]",
-    "树 L5 悬空引用=mirror 树缺 I 级登记——tree-change.json（mirror:true）→ --report → --apply 免批 → 写 function-tree.md（状态=开发中，废弃行不入镜像）"
+    "树 L5 悬空引用=mirror 树缺 I 级登记——tree-change.json（mirror:true）→ --report → --apply 免批 → 写 function-tree.md（状态=开发中，废弃行不入镜像）",
+    "**gate.py 必须从 suite 根跑**（angular 仓 cwd 下 scripts/gate.py 不存在，exit 2 假红）；gate --all 输出有缓冲，日志要等 gate.py 结束才落盘"
   ],
-  "last_gate_passed_at": "2026-11-02"
+  "last_gate_passed_at": "2026-11-03"
 }
