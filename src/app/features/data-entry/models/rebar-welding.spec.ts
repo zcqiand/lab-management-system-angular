@@ -7,7 +7,7 @@ import { Type } from "@angular/core";
 import { TestBed } from "@angular/core/testing";
 import { provideZonelessChangeDetection } from "@angular/core";
 import type { ComponentFixture } from "@angular/core/testing";
-import { describe, expect, vi } from "vitest";
+import { expect, vi } from "vitest";
 
 import { fnTest } from "../../../../../tests/fn";
 import {
@@ -21,7 +21,6 @@ import type { TensileSpecimen } from "./rebar-welding";
 import { RebarWeldingTensileCardComponent } from "./rebar-welding-tensile-card";
 import { RebarWeldingBendCardComponent } from "./rebar-welding-bend-card";
 import type { ParamCardBase } from "./param-card-base";
-import type { ParamCardPatch } from "./types";
 import type { InspectionParameter } from "../../../../api/endpoints/model/inspectionParameter";
 
 vi.setConfig({ testTimeout: 90_000 });
@@ -110,7 +109,7 @@ function makeCard(
   fixture.componentRef.setInput("techReqs", []);
   fixture.componentRef.setInput("config", undefined);
   fixture.componentRef.setInput("readOnly", over.readOnly ?? false);
-  fixture.componentRef.setInput("cardChange", (_p: ParamCardPatch) => {});
+  fixture.componentRef.setInput("cardChange", () => {});
   fixture.detectChanges();
   return { el: fixture.nativeElement as HTMLElement, fixture };
 }

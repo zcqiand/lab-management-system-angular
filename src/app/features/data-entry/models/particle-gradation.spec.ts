@@ -5,7 +5,7 @@ import { Type } from "@angular/core";
 import { TestBed } from "@angular/core/testing";
 import { provideZonelessChangeDetection } from "@angular/core";
 import type { ComponentFixture } from "@angular/core/testing";
-import { describe, expect, vi } from "vitest";
+import { expect, vi } from "vitest";
 
 import { fnTest } from "../../../../../tests/fn";
 import { ParticleGradationCardComponent } from "./particle-gradation-card";

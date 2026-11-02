@@ -14,7 +14,6 @@ import {
   signal,
 } from "@angular/core";
 
-import type { TechnicalRequirement } from "../../../../api/endpoints/model/technicalRequirement";
 import { ParamCardBase } from "./param-card-base";
 import { autoVerdict } from "./cement-strength";
 import { requirementLabel, techReqKey } from "./types";
