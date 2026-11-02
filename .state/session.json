@@ -1,25 +1,27 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T3② 收官，下批 L-T3③（data-entry 域卡 11 张 + SampleExtFieldsModal + ReportPreviewModal docx 链）",
+  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T3③ 收官（models 域卡满版 12 槽），下批 L-T3③-tail（SampleExtFieldsModal + ReportPreviewModal docx 链）",
   "done": [
     "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层、AuthStoreService 4 态 FSM、壳层、LoginPage SSO orchestrator；gate L0-L5 全绿",
     "L-T1 字典页批 M06.F01-F08 全批收官（40eadcf/b579c96/330481f，40 fnTest）",
     "L-T2 码表4页 M04.F06-F09 + 合同 M02.F01 收官（df79969/0af6fee，15 fnTest）",
     "L-T3① 接样 M03.F01+F09 收官（2aba342/c5619ae，7 fnTest）：列表三态过滤/新建编辑删除/提交推进/详情页/流程历史/报告预览壳",
-    "L-T3② 任务分配 M03.F02 + 数据录入 M03.F03 收官（13f6ffd/87d8f70，5 fnTest，gate L0-L5 全绿）：队列页×2 + 安排弹窗（receiptsAssignTask）+ EntryDialog（样品/参数双下拉+DirtyKeys 脏键守卫+create/update 分流）+ registry default 兜底卡骨架",
+    "L-T3② 任务分配 M03.F02 + 数据录入 M03.F03 收官（13f6ffd/87d8f70，5 fnTest）",
+    "L-T3③ 域卡满版批收官（7b98079③a/92faca2③b/2616aa8③c/818a9f1③d/5532c1b③e/c2eba64 lint，gate L0-L5 全绿 d719673）：ParamCardBase（@Directive 九键契约，cardChange=input-fn）+ strength-card-base + 11 具体卡（cement 双卡/concrete 双卡/welding 双卡/rebar-mech/particle/soil 双卡）+ 算法模块逐字拷（cement-strength/rebar-welding/rebar-mechanics）+ registry 满版 12 槽 = react Batch 2B-7 同形；models 全量 55/55 绿",
     "树镜像累计：M03.F01/F09（8 行）+ M03.F02（5 行）+ M03.F03（9 行），令牌已焚；M06.F06.I03 已废弃行待人批"
   ],
-  "next": "L-T3③（独立切片，建议新窗口）：data-entry 域卡 11 张移植——react 源 src/features/data-entry/models/（3525 行：CementCompress/CementFlexural/ConcreteCompress/ConcretePermeability/RebarWeldingTensile/Bend/RebarMechNumeric/ParticleGradation/SoilCompaction/Degree + StrengthCardBase + cement-strength/rebar-mechanics/rebar-welding 算法模块 + resolveInterfaceByParam + registry 扩容 12 卡）；测试 tests/features/data-entry/ 6 文件 1014 行（cementStrength/concreteCards/particleGradation/rebarMech/rebarWelding/soilCards .dom.test.tsx）。red-first：先移植 6 个 spec → 跑红留证 _work/lt3c-red.log → 实现 → 绿 → gate → 双提交。react registry 中 particle-gradation 卡有 `as unknown as ParamModelComponent` cast，angular 侧 NgComponentOutlet inputs 键须逐卡核对（ParamModelProps → cardInputs）。另含 SampleExtFieldsModal（接样单 ext 字段补录，M03.F01.I07）与 ReportPreviewModal docx 渲染链（pizzip/docxtemplater/docx-preview + public/templates 59 模板）独立小片",
+  "next": "L-T3③-tail（独立切片）：①SampleExtFieldsModal（M03.F01.I07，react src/features/data-entry/SampleExtFieldsModal.tsx 244 行，挂 ReceiptDetail）+ ②ReportPreviewModal docx 渲染链（react ReportPreviewModal.tsx 385 行 + reportTemplateData.ts 773 行 + reportTemplateSeed.ts 226 行 + src/data/generated 3 JSON + src/data/templates 59 文件含 manifests.ts + public/templates 同步 + npm 三件套 pizzip/docxtemplater/docx-preview 走 npmmirror --legacy-peer-deps + tests/infrastructure-anchors.test.ts 30 行）。angular 目前无 src/data 整目录——从 react 整目录 cp 后按 import 深度改路径。 DataEntryPage/EntryDialog 要挂 ReportPreviewModal 入口（对齐 react DataEntryPage.tsx 的挂法）。red-first 同节奏，收尾接 L-T4 报告流 M03.F05-F08 + M05.F01 + DashboardPage",
   "open_questions": [
     "M06.F06.I03 已废弃行需人批（废弃永远人裁）——下批或收官批随树操作带上"
   ],
   "deprecated": [
     "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts",
-    "jsdom 测试 url 必须 :5201 同源；zoneless waitFor 内必须 fixture.detectChanges()",
-    "长 CJK 文件 Write 会采样退化（本窗两次实证）——CJK 重文件用 python 行拼装或 Write 后 grep 回验",
-    "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀→cardChange；NgComponentOutlet 普通字段不带调用括号",
-    "npm 依赖走 registry.npmmirror.com + --legacy-peer-deps；docx 三件套（pizzip/docxtemplater/docx-preview）也走镜像"
+    "jsdom 测试 url 必须 :5201 同源；zoneless 卡测试 native input 事件后必须 fixture.detectChanges() 才能断言 DOM 文本",
+    "长 CJK 文件 Write 会采样退化——CJK 重文件 Write 后必须 grep 回验",
+    "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀→cardChange（input-fn 非 output，NgComponentOutlet 只绑 @Input）；NgComponentOutlet 普通字段不带调用括号；模板 computed/signal 一律带 ()",
+    "npm 依赖走 registry.npmmirror.com + --legacy-peer-deps；docx 三件套（pizzip/docxtemplater/docx-preview）也走镜像",
+    "eslint no-unused-vars 不豁免 _ 前缀参数与 vitest describe——spec 收尾跑 gate 前先自扫未用 import"
   ],
   "last_gate_passed_at": "2026-11-02"
 }
