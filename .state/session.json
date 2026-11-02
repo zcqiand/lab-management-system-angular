@@ -1,17 +1,18 @@
 {
   "schema": 1,
   "project": "lab-management-system-angular",
-  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T3③-tail 收官（ext 补录弹窗 + 报告预览 docx 渲染链真化），下批 L-T4 报告流",
+  "current_task": "REQ-2026-031 lab-angular 全量前端同步（react 1:1）——L-T4 报告流收官（M03.F05-F08 + M05.F01，gate L0-L5 全绿），下批 L-T5 收官",
   "done": [
     "L-T0 基建收官（d3cc55a）：真化测试桥（global-setup 五步+bridge config+helpers）、契约层、AuthStoreService 4 态 FSM、壳层、LoginPage SSO orchestrator；gate L0-L5 全绿",
     "L-T1 字典页批 M06.F01-F08 全批收官（40eadcf/b579c96/330481f，40 fnTest）",
     "L-T2 码表4页 M04.F06-F09 + 合同 M02.F01 收官（df79969/0af6fee，15 fnTest）",
     "L-T3① 接样 M03.F01+F09 收官（2aba342/c5619ae，7 fnTest）：列表三态过滤/新建编辑删除/提交推进/详情页/流程历史/报告预览壳",
     "L-T3② 任务分配 M03.F02 + 数据录入 M03.F03 收官（13f6ffd/87d8f70，5 fnTest）",
-    "L-T3③ 域卡满版批收官（7b98079③a/92faca2③b/2616aa8③c/818a9f1③d/5532c1b③e/c2eba64 lint，gate 全绿 d719673）：ParamCardBase 九键契约 + 11 具体卡 + 算法模块逐字拷 + registry 满版 12 槽；models 55/55 绿",
-    "L-T3③-tail 收官（e071849，gate L0-L5 全绿）：①SampleExtFieldsModal（M03.F01.I07，open input + submitted/cancelled output——output 禁 on 前缀）②ReportPreviewModal 真化（pickTemplateUrl/applyComposedSampleName + pizzip/docxtemplater/docx-preview 动态 import + 打印/套打样式）③report-template-seed/data 逐字拷 ④src/data 整目录 + public/templates 59 件迁移 ⑤tests/infrastructure-anchors.spec.ts（红先行→绿）⑥receipt-detail 占位壳→mat-dialog 薄壳宿主（原标题断言保持绿）"
+    "L-T3③ 域卡满版批收官（7b98079③a→c2eba64 lint，gate 全绿 d719673）：ParamCardBase 九键契约 + 11 具体卡 + registry 满版 12 槽；models 55/55 绿",
+    "L-T3③-tail 收官（e071849，gate 全绿）：SampleExtFieldsModal（M03.F01.I07）+ ReportPreviewModal docx 渲染链真化 + src/data/templates 整迁 + tests/infrastructure-anchors",
+    "L-T4 报告流批收官（42fdf5e，gate L0-L5 全绿 135 条目）：①ReportPhasePage 共享组件（stage/submitLabel/i01/i02 四 input + afterNextRender 首载）+ 4 page wrapper（审核/批准/发放/归档，多选批量 submit + 退回 MatDialog）②SummaryList（/summary+/dashboard+/ 同渲染：动态列汇总表+统计五卡+I03 三卡+I04 漏斗）③树镜像登记 M03.F05-F08 各四行 + M05.F01 六行（mirror 免批 --apply，22 行非废弃全量）④15 fnTest + 全量 129/129 绿"
   ],
-  "next": "L-T4 报告流切片：①报告流 M03.F05-F08（react features/reports/ReportPhasePage.tsx 340 行 + 9 fnTests，四页 thin wrapper）②M05.F01 SummaryList（react 389 行 + 8 fnTests）③DashboardPage 对齐确认（angular 16 行 vs react 13 行）④认证域壳层回归。red-first 同节奏（先移植 react 对应 dom 测试拿红灯）。收尾接 L-T5 收官批：树推进 mirror 批量核销 + gate --all + /handoff",
+  "next": "L-T5 收官批：①树推进 mirror 核销（--apply 推进开发中/GA 翻转凭 REQ 验收记录；M03.F05-F08/M05.F01 F 级仍规划）②gate --all ③/handoff ④M06.F06.I03 已废弃行人批（废弃永远人裁）⑤遗留：lab-react L4 竞态真修搭车候选",
   "open_questions": [
     "M06.F06.I03 已废弃行需人批（废弃永远人裁）——L-T5 收官批随树操作带上"
   ],
@@ -19,12 +20,14 @@
     "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts",
     "jsdom 测试 url 必须 :5201 同源；zoneless 卡测试 native input 事件后必须 fixture.detectChanges() 才能断言 DOM 文本",
     "长 CJK 文件 Write 会采样退化——CJK 重文件 Write 后必须 grep 回验",
-    "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀（cardChange/submitted/closed）；NgComponentOutlet 普通字段不带调用括号；模板 computed/signal 一律带 ()；模板禁直调全局（Number()→组件方法 toNum）",
-    "angular tsc/lint 严于 react 两处：noPropertyAccessFromIndexSignature（索引签名点访问→方括号，report-template-data ypbh 族/ext.sampleModel 族）+ no-irregular-whitespace（react 拷入件的字面 U+3000/U+2000 全转 \\u3000 文本）；模板花括号转义用 {{ \"{\" }} 不认 react 的 {'{'}",
-    "npm 依赖走 registry.npmmirror.com + --legacy-peer-deps；docx 三件套（pizzip/docxtemplater/docx-preview）也走镜像",
-    "eslint no-unused-vars 不豁免 _ 前缀参数与 vitest describe——spec 收尾跑 gate 前先自扫未用 import",
-    "ng test --include 相对 src/ 解析，tests/ 目录规格须 angular.json test.include 加 ../tests/** 前缀（已加）；angular @/ 别名已配 tsconfig paths，react 拷件 import 零改写",
-    "python 替换 CJK 字面量时 Bash heredoc 内 \"\\u3000\" 会被 shell/python 双层转义坑（chr(0x3000) 构造才稳）；prettier --write 会归一拷入的 react 数据件格式（33 件）属预期语义不变"
+    "features/<dir>/ api 面路径深度 ../../../api（models/ 下 ../../../../api）；compactParams flowStatus 字面量补 as FlowStatus；output 禁 on 前缀（cardChange/submitted/closed）；NgComponentOutlet 普通字段不带调用括号；模板 computed/signal 一律带 ()；模板禁直调全局（Number()/String()→组件方法）",
+    "angular tsc/lint 严于 react 两处：noPropertyAccessFromIndexSignature（索引签名点访问→方括号）+ no-irregular-whitespace（react 拷入件字面 U+3000/U+2000 全转 \\u3000 文本）；模板花括号转义用 {{ \"{\" }} 不认 react 的 {'{'}",
+    "npm 依赖走 registry.npmmirror.com + --legacy-peer-deps；docx 三件套也走镜像",
+    "eslint no-unused-vars 不豁免 _ 前缀参数——spec 收尾跑 gate 前先自扫未用 import",
+    "ng test --include 相对 src/ 解析（tests/ 目录规格须 ../tests/** 前缀，已配）；@/ 别名已配 tsconfig paths",
+    "python 替换 CJK 字面量 chr(0x3000) 构造才稳；prettier --write 归一 react 拷入件属预期",
+    "**input.required + constructor 直调 load = NG0950**（空表两行骗过 rows>1 假绿）——afterNextRender(() => void this.load()) 才对；**裸挂页组件 spec 必须 realChainHttpProviders()**（只给 zoneless 把 GET 打到 about:blank 数据恒空不报错）；插值 data-testid 用 [attr.data-testid]",
+    "树 L5 悬空引用=mirror 树缺 I 级登记——tree-change.json（mirror:true）→ --report → --apply 免批 → 写 function-tree.md（状态=开发中，废弃行不入镜像）"
   ],
   "last_gate_passed_at": "2026-11-02"
 }
