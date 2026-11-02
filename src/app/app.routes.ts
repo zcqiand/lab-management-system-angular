@@ -6,14 +6,19 @@ import { Routes } from "@angular/router";
 import { AppShell } from "./app-shell/app-shell";
 import { BadPathRedirectComponent } from "./app-shell/bad-path-redirect";
 import { authGuard } from "./auth.guard";
+import { BrandsPageComponent } from "./pages/brands-page";
 import { CalculationMethodsPageComponent } from "./pages/calculation-methods-page";
+import { ContractsPageComponent } from "./pages/contracts-page";
 import { DashboardPageComponent } from "./pages/dashboard-page";
+import { GradesPageComponent } from "./pages/grades-page";
 import { LoginPageComponent } from "./pages/login-page";
+import { ModelsPageComponent } from "./pages/models-page";
 import { ObjectsPageComponent } from "./pages/objects-page";
 import { ParamInterfacesPageComponent } from "./pages/param-interfaces-page";
 import { ParametersPageComponent } from "./pages/parameters-page";
 import { ReportNamesPageComponent } from "./pages/report-names-page";
 import { SpecialtiesPageComponent } from "./pages/specialties-page";
+import { SpecificationsPageComponent } from "./pages/specifications-page";
 import { StandardsPageComponent } from "./pages/standards-page";
 import { TechnicalRequirementsPageComponent } from "./pages/technical-requirements-page";
 
@@ -54,6 +59,12 @@ export const routes: Routes = [
       // L-T1 批③：M06.F07 报告名称 + M06.F08 参数界面（react 同名路径 1:1）
       { path: "report-names", component: ReportNamesPageComponent },
       { path: "param-interfaces", component: ParamInterfacesPageComponent },
+      // L-T2 批：M02.F01 合同 + M04.F06-F09 码表 4 页（react 同名路径 1:1）
+      { path: "contracts", component: ContractsPageComponent },
+      { path: "models", component: ModelsPageComponent },
+      { path: "specifications", component: SpecificationsPageComponent },
+      { path: "grades", component: GradesPageComponent },
+      { path: "brands", component: BrandsPageComponent },
     ],
   },
 
