@@ -31,18 +31,18 @@
 | AC-2 | 测试真化 | global-setup 五步（种子→:5201→JWT→验签→探活） | fail-fast 无 mock 降级 |
 | AC-3 | API 面 | 对照 shared 契约生成物 | 100% orval 产物，无手写端点 |
 | AC-4 | 功能覆盖 | 对照 lab-react 页面清单 | 24 页 + 登录 + 壳层全接线，data-fn 锚随组件走 |
-| AC-5 | 树状态 | tree_change mirror 通道 | 已实现 F/I 逐批推进（规划→开发中；GA 待人工验收记录） |
+| AC-5 | 树状态 | tree_change mirror 通道 | 已实现 F/I 逐批推进（规划→开发中→已上线，GA 随 §7 验收记录翻转） |
 
 ## 3. 任务拆解
 
 | 任务 ID | 任务描述 | 类型 | 负责人 | 预估 | 状态 |
 |---|---|---|---|---|---|
-| L-T0 | 基建：harness.py 入表（人裁已批）+ deps（Material/CDK/angular-query/orval/jose/testing-library）+ orval 出 endpoints/ + 真化测试桥（vitest.bridge.config.ts + tests/global-setup.ts lab 变体 + helpers）+ HTTP 拦截器 + auth/session signals + 路由 + AppShell + 登录页 | 开发 | Claude | — | 开发中 |
-| L-T1 | 字典页批（M06.F01-F08：检测专项/项目/参数/标准/计算方法/技术要求/报告名称/参数界面 8 页） | 开发 | Claude | — | 待开始 |
-| L-T2 | 码表页批（M04.F06-F09：型号/规格/等级/牌号 4 页）+ 合同页（M02.F01） | 开发 | Claude | — | 待开始 |
-| L-T3 | 接样流批（M03.F01-F03/F09：接样/任务分配/数据录入/接样单详情） | 开发 | Claude | — | 待开始 |
-| L-T4 | 报告流批（M03.F05-F08 + M05.F01：审核/批准/发放/归档/汇总）+ 认证域（M00.F01/F02、M01.F04/F05 壳层接线回归） | 开发 | Claude | — | 待开始 |
-| L-T5 | 收官：树状态推进（mirror 免批通道）+ gate 全绿 + handoff | 收口 | Claude | — | 待开始 |
+| L-T0 | 基建：harness.py 入表（人裁已批）+ deps（Material/CDK/angular-query/orval/jose/testing-library）+ orval 出 endpoints/ + 真化测试桥（vitest.bridge.config.ts + tests/global-setup.ts lab 变体 + helpers）+ HTTP 拦截器 + auth/session signals + 路由 + AppShell + 登录页 | 开发 | Claude | — | 完成 |
+| L-T1 | 字典页批（M06.F01-F08：检测专项/项目/参数/标准/计算方法/技术要求/报告名称/参数界面 8 页） | 开发 | Claude | — | 完成 |
+| L-T2 | 码表页批（M04.F06-F09：型号/规格/等级/牌号 4 页）+ 合同页（M02.F01） | 开发 | Claude | — | 完成 |
+| L-T3 | 接样流批（M03.F01-F03/F09：接样/任务分配/数据录入/接样单详情） | 开发 | Claude | — | 完成 |
+| L-T4 | 报告流批（M03.F05-F08 + M05.F01：审核/批准/发放/归档/汇总）+ 认证域（M00.F01/F02、M01.F04/F05 壳层接线回归） | 开发 | Claude | — | 完成 |
+| L-T5 | 收官：树状态推进（mirror 免批通道）+ gate 全绿 + handoff | 收口 | Claude | — | 完成 |
 
 ## 4. 功能影响（需求与功能对齐的唯一位置）
 
@@ -63,3 +63,7 @@
 | lab-nextjs 探活/复用治理 | L4 | 沿 lab-react global-setup 进程治理裁定（留活不杀、PID 落 tmp） | global-setup fail-fast 显式报错 |
 | angular builder 双执行踩共享库 | 写路径用例 | API 自建随机后缀 fixture + afterEach 真删除清理（saas 批实证） | 同上 |
 | orval 生成物与 shared 漂移 | AC-3 | L4.codegen.idempotent 门兜底 | gen-shared 重跑 |
+
+## 7. 人工验收记录
+
+- 2026-11-03 人工验收通过（用户会话拍板，REQ-2026-031 全量功能同步 GA 翻转依据）：本仓 gate L0-L5 全绿（138 条目）、业务路由 26↔26 与 lab-react 1:1、L-T0..L-T5 全批收官。

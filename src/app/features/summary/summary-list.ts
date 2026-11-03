@@ -462,6 +462,7 @@ export class SummaryListComponent {
   private readonly api = inject(SummaryService);
 
   readonly data = signal<SummaryData | null>(null);
+  // @entry M05.F01.I06 — 仪表盘统计基础端点 （ADR-0033 阶段二自后端仓 M05.F02.I01 改挂 F01）
   readonly stats = signal<DashboardStats | null>(null);
   readonly loading = signal(true);
   readonly error = signal<string | null>(null);

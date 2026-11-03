@@ -42,297 +42,297 @@
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M00.F01 | 当前用户会话 | 当前用户信息 + 关联租户列表 + 当前选中租户（GET /auth/me） | 开发中 |
-| M00.F02 | 登录选租户 | 登录后选择租户，换发携带 tenant_id claim 的 token（POST /auth/switch-tenant） | 开发中 |
+| M00.F01 | 当前用户会话 | 当前用户信息 + 关联租户列表 + 当前选中租户（GET /auth/me） | 已上线 |
+| M00.F02 | 登录选租户 | 登录后选择租户，换发携带 tenant_id claim 的 token（POST /auth/switch-tenant） | 已上线 |
 
 ### M00.F01 当前用户会话
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M00.F01.I01 | 当前会话（顶栏登录用户显示名） | 接口 | 前端+后端 | GET /auth/me hydrate user/tenants/currentTenantId；顶栏显示登录用户 displayName（空串回退 username，短路或写法不兜空串） | 开发中 |
+| M00.F01.I01 | 当前会话（顶栏登录用户显示名） | 接口 | 前端+后端 | GET /auth/me hydrate user/tenants/currentTenantId；顶栏显示登录用户 displayName（空串回退 username，短路或写法不兜空串） | 已上线 |
 
 ### M00.F02 登录选租户
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M00.F02.I01 | 租户切换器（POST /auth/switch-tenant 换发新租户 token） | 按钮 | 前端+后端 | header 右侧下拉，镜像 lab-nextjs tenant-switcher；候选来自会话租户清单，成功后整页刷新拉新租户数据 | 开发中 |
+| M00.F02.I01 | 租户切换器（POST /auth/switch-tenant 换发新租户 token） | 按钮 | 前端+后端 | header 右侧下拉，镜像 lab-nextjs tenant-switcher；候选来自会话租户清单，成功后整页刷新拉新租户数据 | 已上线 |
 
 ## M01 认证管理
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M01.F04 | 权限管理 | RBAC 角色权限、路由守卫、权限指令、动态菜单（身份平台下发） | 开发中 |
-| M01.F05 | 认证管理 | OAuth 2.0 授权码 SSO（client_secret 后端持）+ lab 自家 JWT 签发，saas token 不出 lab 后端 | 开发中 |
+| M01.F04 | 权限管理 | RBAC 角色权限、路由守卫、权限指令、动态菜单（身份平台下发） | 已上线 |
+| M01.F05 | 认证管理 | OAuth 2.0 授权码 SSO（client_secret 后端持）+ lab 自家 JWT 签发，saas token 不出 lab 后端 | 已上线 |
 
 ### M01.F04 权限管理
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M01.F04.I01 | 动态菜单下发（GET /auth/menus） | 查询 | 前端+后端 |  | 开发中 |
+| M01.F04.I01 | 动态菜单下发（GET /auth/menus） | 查询 | 前端+后端 |  | 已上线 |
 
 ### M01.F05 认证管理
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M01.F05.I04 | 登出 | 按钮 | 前端+后端 |  | 开发中 |
+| M01.F05.I04 | 登出 | 按钮 | 前端+后端 |  | 已上线 |
 
 ## M02 资源管理
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M02.F01 | 合同管理 | 合同 CRUD、工程信息维护 | 开发中 |
+| M02.F01 | 合同管理 | 合同 CRUD、工程信息维护 | 已上线 |
 
 ## M03 试验过程管理
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M03.F01 | 接样管理 | 接样单 CRUD、报告类别关联、流程状态 | 开发中 |
-| M03.F02 | 任务分配 | 接样提交后安排检测人员/计划日期，提交进入数据录入；任务字段挂 SampleReceipt | 开发中 |
-| M03.F03 | 数据录入 | 样品检测数据录入 | 开发中 |
-| M03.F05 | 报告审核 | 报告审核流程 | 开发中 |
-| M03.F06 | 报告批准 | 报告批准流程 | 开发中 |
-| M03.F07 | 报告发放 | 报告发放流程 | 开发中 |
-| M03.F08 | 报告归档 | 报告归档流程 | 开发中 |
-| M03.F09 | 接样单详情 | 接样单查看（接样信息+样品信息+检测数据） | 开发中 |
+| M03.F01 | 接样管理 | 接样单 CRUD、报告类别关联、流程状态 | 已上线 |
+| M03.F02 | 任务分配 | 接样提交后安排检测人员/计划日期，提交进入数据录入；任务字段挂 SampleReceipt | 已上线 |
+| M03.F03 | 数据录入 | 样品检测数据录入 | 已上线 |
+| M03.F05 | 报告审核 | 报告审核流程 | 已上线 |
+| M03.F06 | 报告批准 | 报告批准流程 | 已上线 |
+| M03.F07 | 报告发放 | 报告发放流程 | 已上线 |
+| M03.F08 | 报告归档 | 报告归档流程 | 已上线 |
+| M03.F09 | 接样单详情 | 接样单查看（接样信息+样品信息+检测数据） | 已上线 |
 
 ## M04 基础数据
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M04.F06 | 型号维护 | InspectionModel 实体码表维护，列表按检测专项过滤 | 开发中 |
-| M04.F07 | 规格维护 | InspectionSpec 实体码表维护，列表按检测专项过滤 | 开发中 |
-| M04.F08 | 等级维护 | InspectionGrade 实体码表维护，列表按检测专项过滤 | 开发中 |
-| M04.F09 | 牌号维护 | InspectionBrand 实体码表维护，列表按检测专项过滤 | 开发中 |
+| M04.F06 | 型号维护 | InspectionModel 实体码表维护，列表按检测专项过滤 | 已上线 |
+| M04.F07 | 规格维护 | InspectionSpec 实体码表维护，列表按检测专项过滤 | 已上线 |
+| M04.F08 | 等级维护 | InspectionGrade 实体码表维护，列表按检测专项过滤 | 已上线 |
+| M04.F09 | 牌号维护 | InspectionBrand 实体码表维护，列表按检测专项过滤 | 已上线 |
 
 ## M05 数据统计
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M05.F01 | 报告汇总 | 按报告类别输出试验报告汇总表 | 开发中 |
+| M05.F01 | 报告汇总 | 按报告类别输出试验报告汇总表 | 已上线 |
 
 ## M06 检测能力
 
 | 功能 ID | 功能名称 | 说明 | 状态 |
 |---|---|---|---|
-| M06.F01 | 检测专项 | InspectionSpecialty CRUD（检测能力字典根） | 开发中 |
-| M06.F02 | 检测项目 | InspectionObject CRUD + 专项/参数关联 | 开发中 |
-| M06.F03 | 检测参数 | InspectionParameter CRUD + 标准/参数关联 | 开发中 |
-| M06.F04 | 检测标准 | InspectionStandard CRUD（含状态：active/superseded/draft） | 开发中 |
-| M06.F05 | 计算方法 | CalculationMethod 维护（复合主键，算法类型 + 公式） | 开发中 |
-| M06.F06 | 技术要求 | TechnicalRequirement 维护，按四维度匹配；brand/model/grade/spec 改为 FK 引用实体 | 开发中 |
-| M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 开发中 |
-| M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 开发中 |
+| M06.F01 | 检测专项 | InspectionSpecialty CRUD（检测能力字典根） | 已上线 |
+| M06.F02 | 检测项目 | InspectionObject CRUD + 专项/参数关联 | 已上线 |
+| M06.F03 | 检测参数 | InspectionParameter CRUD + 标准/参数关联 | 已上线 |
+| M06.F04 | 检测标准 | InspectionStandard CRUD（含状态：active/superseded/draft） | 已上线 |
+| M06.F05 | 计算方法 | CalculationMethod 维护（复合主键，算法类型 + 公式） | 已上线 |
+| M06.F06 | 技术要求 | TechnicalRequirement 维护，按四维度匹配；brand/model/grade/spec 改为 FK 引用实体 | 已上线 |
+| M06.F07 | 报告名称 | InspectionReportName CRUD + extFields 模板 + 关联标准/参数 | 已上线 |
+| M06.F08 | 参数界面 | ParamInterface 维护 + 参数↔界面 link | 已上线 |
 
 ### M06.F01 检测专项
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F01.I01 | 检测专项列表 + CRUD | 页面 | 前端+后端 |  | 开发中 |
-| M06.F01.I02 | 创建专项 | 接口 | 前端+后端 | POST /api/inspection/specialties：code/officialNo/name 必填；isOfficial/enabled 默认 true；sortOrder 默认 0 | 开发中 |
-| M06.F01.I03 | 更新专项 | 接口 | 前端+后端 | PUT /api/inspection/specialties/{code}：PATCH 语义，未传字段保留 | 开发中 |
+| M06.F01.I01 | 检测专项列表 + CRUD | 页面 | 前端+后端 |  | 已上线 |
+| M06.F01.I02 | 创建专项 | 接口 | 前端+后端 | POST /api/inspection/specialties：code/officialNo/name 必填；isOfficial/enabled 默认 true；sortOrder 默认 0 | 已上线 |
+| M06.F01.I03 | 更新专项 | 接口 | 前端+后端 | PUT /api/inspection/specialties/{code}：PATCH 语义，未传字段保留 | 已上线 |
 
 ### M06.F02 检测项目
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F02.I01 | 检测项目列表（按专项过滤） | 页面 | 前端+后端 |  | 开发中 |
-| M06.F02.I02 | 项目↔专项/参数关联 | 按钮 | 前端+后端 |  | 开发中 |
-| M06.F02.I03 | 更新项目 | 接口 | 前端+后端 | PUT /api/inspection/objects/{code}：PATCH 语义 | 开发中 |
-| M06.F02.I04 | 删除项目 | 接口 | 前端+后端 | DELETE /api/inspection/objects/{code}：204 if exists | 开发中 |
-| M06.F02.I05 | 专项↔项目 link | 接口 | 前端+后端 | POST /api/inspection/links/specialty-object：建立 specialty→object 关联，remark 可选 | 开发中 |
-| M06.F02.I06 | 专项↔项目 unlink | 接口 | 前端+后端 | DELETE /api/inspection/links/specialty-object：404 if 不存在 | 开发中 |
-| M06.F02.I07 | 项目↔参数 link | 接口 | 前端+后端 | POST /api/inspection/links/object-parameter：建立 object→parameter 关联，qualificationLevel 默认 QUALIFIED，sourcePage/remark 可选 | 开发中 |
+| M06.F02.I01 | 检测项目列表（按专项过滤） | 页面 | 前端+后端 |  | 已上线 |
+| M06.F02.I02 | 项目↔专项/参数关联 | 按钮 | 前端+后端 |  | 已上线 |
+| M06.F02.I03 | 更新项目 | 接口 | 前端+后端 | PUT /api/inspection/objects/{code}：PATCH 语义 | 已上线 |
+| M06.F02.I04 | 删除项目 | 接口 | 前端+后端 | DELETE /api/inspection/objects/{code}：204 if exists | 已上线 |
+| M06.F02.I05 | 专项↔项目 link | 接口 | 前端+后端 | POST /api/inspection/links/specialty-object：建立 specialty→object 关联，remark 可选 | 已上线 |
+| M06.F02.I06 | 专项↔项目 unlink | 接口 | 前端+后端 | DELETE /api/inspection/links/specialty-object：404 if 不存在 | 已上线 |
+| M06.F02.I07 | 项目↔参数 link | 接口 | 前端+后端 | POST /api/inspection/links/object-parameter：建立 object→parameter 关联，qualificationLevel 默认 QUALIFIED，sourcePage/remark 可选 | 已上线 |
 
 ### M06.F03 检测参数
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F03.I01 | 检测参数列表 + CRUD | 页面 | 前端+后端 |  | 开发中 |
-| M06.F03.I02 | 参数↔标准关联 | 按钮 | 前端+后端 |  | 开发中 |
-| M06.F03.I03 | 更新参数 | 接口 | 前端+后端 | PUT /api/inspection/parameters/{code}：PATCH 语义；aliases 传则整体替换 | 开发中 |
+| M06.F03.I01 | 检测参数列表 + CRUD | 页面 | 前端+后端 |  | 已上线 |
+| M06.F03.I02 | 参数↔标准关联 | 按钮 | 前端+后端 |  | 已上线 |
+| M06.F03.I03 | 更新参数 | 接口 | 前端+后端 | PUT /api/inspection/parameters/{code}：PATCH 语义；aliases 传则整体替换 | 已上线 |
 
 ### M06.F04 检测标准
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F04.I01 | 检测标准列表（状态过滤） | 页面 | 前端+后端 |  | 开发中 |
-| M06.F04.I02 | 标准 CRUD | 按钮 | 前端+后端 |  | 开发中 |
-| M06.F04.I03 | 更新标准 | 接口 | 前端+后端 | PUT /api/inspection/standards/{code}：PATCH 语义 | 开发中 |
-| M06.F04.I04 | 删除标准 | 接口 | 前端+后端 | DELETE /api/inspection/standards/{code}：204 if exists | 开发中 |
+| M06.F04.I01 | 检测标准列表（状态过滤） | 页面 | 前端+后端 |  | 已上线 |
+| M06.F04.I02 | 标准 CRUD | 按钮 | 前端+后端 |  | 已上线 |
+| M06.F04.I03 | 更新标准 | 接口 | 前端+后端 | PUT /api/inspection/standards/{code}：PATCH 语义 | 已上线 |
+| M06.F04.I04 | 删除标准 | 接口 | 前端+后端 | DELETE /api/inspection/standards/{code}：204 if exists | 已上线 |
 
 ### M06.F05 计算方法
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F05.I01 | 计算方法维护 | 页面 | 前端+后端 |  | 开发中 |
-| M06.F05.I02 | 计算方法详情 | 接口 | 前端+后端 | GET /api/calculation-methods/{inspectionObjectCode}/{inspectionParameterCode}：复合主键 | 开发中 |
-| M06.F05.I03 | 创建计算方法 | 接口 | 前端+后端 | POST /api/calculation-methods：body CreateCalculationMethodRequest，algorithmType 默认 MANUAL、specimenCount 默认 1 | 开发中 |
+| M06.F05.I01 | 计算方法维护 | 页面 | 前端+后端 |  | 已上线 |
+| M06.F05.I02 | 计算方法详情 | 接口 | 前端+后端 | GET /api/calculation-methods/{inspectionObjectCode}/{inspectionParameterCode}：复合主键 | 已上线 |
+| M06.F05.I03 | 创建计算方法 | 接口 | 前端+后端 | POST /api/calculation-methods：body CreateCalculationMethodRequest，algorithmType 默认 MANUAL、specimenCount 默认 1 | 已上线 |
 
 ### M06.F06 技术要求
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F06.I01 | 技术要求列表（多维过滤） | 页面 | 前端+后端 |  | 开发中 |
-| M06.F06.I02 | 新建/编辑技术要求 | 按钮 | 前端+后端 |  | 开发中 |
-| M06.F06.I03 | 创建技术要求 | 接口 | 前端+后端 | BASE 编号对齐：POST /api/technical-requirements：tenant 从 token claim 注入；默认值 numeric/≥/manual/draft（react 旧 I03 删除语义已迁 I05，react 已废弃行不入镜像） | 开发中 |
-| M06.F06.I04 | 更新技术要求 | 接口 | 前端+后端 | BASE 编号对齐：PUT /api/technical-requirements/{object}/{param}/{standard}：PATCH 语义 | 开发中 |
-| M06.F06.I05 | 删除技术要求（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/technical-requirements/{object}/{param}/{standard}（实现即原 M06.F06.I03） | 开发中 |
+| M06.F06.I01 | 技术要求列表（多维过滤） | 页面 | 前端+后端 |  | 已上线 |
+| M06.F06.I02 | 新建/编辑技术要求 | 按钮 | 前端+后端 |  | 已上线 |
+| M06.F06.I03 | 创建技术要求 | 接口 | 前端+后端 | BASE 编号对齐：POST /api/technical-requirements：tenant 从 token claim 注入；默认值 numeric/≥/manual/draft（react 旧 I03 删除语义已迁 I05，react 已废弃行不入镜像） | 已上线 |
+| M06.F06.I04 | 更新技术要求 | 接口 | 前端+后端 | BASE 编号对齐：PUT /api/technical-requirements/{object}/{param}/{standard}：PATCH 语义 | 已上线 |
+| M06.F06.I05 | 删除技术要求（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/technical-requirements/{object}/{param}/{standard}（实现即原 M06.F06.I03） | 已上线 |
 
 ### M06.F07 报告名称
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F07.I01 | 报告名称列表 + extFields 模板 | 页面 | 前端+后端 |  | 开发中 |
-| M06.F07.I02 | 报告名称↔标准/参数关联 | 按钮 | 前端+后端 |  | 开发中 |
-| M06.F07.I03 | 创建报告名称 | 接口 | 前端+后端 | POST /api/report-names：code/name 必填；extFields 默认 [] | 开发中 |
-| M06.F07.I04 | 更新报告名称 | 接口 | 前端+后端 | PUT /api/report-names/{code}：PATCH 语义 | 开发中 |
-| M06.F07.I05 | 删除报告名称 | 接口 | 前端+后端 | DELETE /api/report-names/{code}：204 if exists | 开发中 |
-| M06.F07.I06 | 项目↔报告名称 link | 接口 | 前端+后端 | POST /api/report-names/links/object：建立 object→report-name 关联，remark 可选 | 开发中 |
-| M06.F07.I07 | 报告名称↔标准 link | 接口 | 前端+后端 | POST /api/report-names/links/standard：建立 report-name→standard(role) 关联，role 必填 | 开发中 |
-| M06.F07.I08 | 报告名称↔参数 link | 接口 | 前端+后端 | POST /api/report-names/links/parameter：建立 report-name→parameter 关联 | 开发中 |
+| M06.F07.I01 | 报告名称列表 + extFields 模板 | 页面 | 前端+后端 |  | 已上线 |
+| M06.F07.I02 | 报告名称↔标准/参数关联 | 按钮 | 前端+后端 |  | 已上线 |
+| M06.F07.I03 | 创建报告名称 | 接口 | 前端+后端 | POST /api/report-names：code/name 必填；extFields 默认 [] | 已上线 |
+| M06.F07.I04 | 更新报告名称 | 接口 | 前端+后端 | PUT /api/report-names/{code}：PATCH 语义 | 已上线 |
+| M06.F07.I05 | 删除报告名称 | 接口 | 前端+后端 | DELETE /api/report-names/{code}：204 if exists | 已上线 |
+| M06.F07.I06 | 项目↔报告名称 link | 接口 | 前端+后端 | POST /api/report-names/links/object：建立 object→report-name 关联，remark 可选 | 已上线 |
+| M06.F07.I07 | 报告名称↔标准 link | 接口 | 前端+后端 | POST /api/report-names/links/standard：建立 report-name→standard(role) 关联，role 必填 | 已上线 |
+| M06.F07.I08 | 报告名称↔参数 link | 接口 | 前端+后端 | POST /api/report-names/links/parameter：建立 report-name→parameter 关联 | 已上线 |
 
 ### M06.F08 参数界面
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M06.F08.I01 | 参数界面维护 + link | 页面 | 前端+后端 |  | 开发中 |
-| M06.F08.I02 | 参数界面详情 | 接口 | 前端+后端 | GET /api/param-interfaces/{code}：返回 ParamInterface（含 config 反序列化的 Map<String,Object>） | 开发中 |
-| M06.F08.I03 | 创建参数界面 | 接口 | 前端+后端 | POST /api/param-interfaces：code/componentPath 必填；config 默认 {} | 开发中 |
-| M06.F08.I04 | 更新参数界面 | 接口 | 前端+后端 | PUT /api/param-interfaces/{code}：PATCH 语义 | 开发中 |
-| M06.F08.I05 | 删除参数界面 | 接口 | 前端+后端 | DELETE /api/param-interfaces/{code}：204 if exists | 开发中 |
-| M06.F08.I06 | 参数↔界面 link | 接口 | 前端+后端 | POST /api/param-interfaces/links：建立 parameter→interface 关联，reportNameCode/config 可选（config 走 jsonb） | 开发中 |
+| M06.F08.I01 | 参数界面维护 + link | 页面 | 前端+后端 |  | 已上线 |
+| M06.F08.I02 | 参数界面详情 | 接口 | 前端+后端 | GET /api/param-interfaces/{code}：返回 ParamInterface（含 config 反序列化的 Map<String,Object>） | 已上线 |
+| M06.F08.I03 | 创建参数界面 | 接口 | 前端+后端 | POST /api/param-interfaces：code/componentPath 必填；config 默认 {} | 已上线 |
+| M06.F08.I04 | 更新参数界面 | 接口 | 前端+后端 | PUT /api/param-interfaces/{code}：PATCH 语义 | 已上线 |
+| M06.F08.I05 | 删除参数界面 | 接口 | 前端+后端 | DELETE /api/param-interfaces/{code}：204 if exists | 已上线 |
+| M06.F08.I06 | 参数↔界面 link | 接口 | 前端+后端 | POST /api/param-interfaces/links：建立 parameter→interface 关联，reportNameCode/config 可选（config 走 jsonb） | 已上线 |
 
 ### M02.F01 合同管理
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M02.F01.I01 | 合同列表（三态过滤） | 页面 | 前端+后端 |  | 开发中 |
-| M02.F01.I02 | 新建/编辑合同 | 按钮 | 前端+后端 |  | 开发中 |
-| M02.F01.I03 | 删除合同 | 按钮 | 前端+后端 |  | 开发中 |
+| M02.F01.I01 | 合同列表（三态过滤） | 页面 | 前端+后端 |  | 已上线 |
+| M02.F01.I02 | 新建/编辑合同 | 按钮 | 前端+后端 |  | 已上线 |
+| M02.F01.I03 | 删除合同 | 按钮 | 前端+后端 |  | 已上线 |
 
 ### M04.F06 型号维护
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M04.F06.I01 | 型号列表（按专项过滤 + 拖拽排序） | 页面 | 前端+后端 |  | 开发中 |
-| M04.F06.I02 | 新建/编辑型号 | 按钮 | 前端+后端 |  | 开发中 |
-| M04.F06.I04 | 删除型号（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/models/{code}（实现即 react 原 M04.F06.I03；react I03 已废弃不入镜像） | 开发中 |
+| M04.F06.I01 | 型号列表（按专项过滤 + 拖拽排序） | 页面 | 前端+后端 |  | 已上线 |
+| M04.F06.I02 | 新建/编辑型号 | 按钮 | 前端+后端 |  | 已上线 |
+| M04.F06.I04 | 删除型号（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/models/{code}（实现即 react 原 M04.F06.I03；react I03 已废弃不入镜像） | 已上线 |
 
 ### M04.F07 规格维护
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M04.F07.I01 | 规格列表 | 页面 | 前端+后端 |  | 开发中 |
-| M04.F07.I02 | 新建/编辑规格 | 按钮 | 前端+后端 |  | 开发中 |
-| M04.F07.I04 | 删除规格 | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/specs/{code}（react I03 已废弃不入镜像） | 开发中 |
+| M04.F07.I01 | 规格列表 | 页面 | 前端+后端 |  | 已上线 |
+| M04.F07.I02 | 新建/编辑规格 | 按钮 | 前端+后端 |  | 已上线 |
+| M04.F07.I04 | 删除规格 | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/specs/{code}（react I03 已废弃不入镜像） | 已上线 |
 
 ### M04.F08 等级维护
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M04.F08.I01 | 等级列表 | 页面 | 前端+后端 |  | 开发中 |
-| M04.F08.I02 | 新建/编辑等级 | 按钮 | 前端+后端 |  | 开发中 |
-| M04.F08.I04 | 删除等级 | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/grades/{code}（react I03 已废弃不入镜像） | 开发中 |
+| M04.F08.I01 | 等级列表 | 页面 | 前端+后端 |  | 已上线 |
+| M04.F08.I02 | 新建/编辑等级 | 按钮 | 前端+后端 |  | 已上线 |
+| M04.F08.I04 | 删除等级 | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/grades/{code}（react I03 已废弃不入镜像） | 已上线 |
 
 ### M04.F09 牌号维护
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M04.F09.I01 | 牌号列表 | 页面 | 前端+后端 |  | 开发中 |
-| M04.F09.I02 | 新建/编辑牌号 | 按钮 | 前端+后端 |  | 开发中 |
-| M04.F09.I03 | 删除牌号 | 按钮 | 前端+后端 |  | 开发中 |
-| M04.F09.I04 | 删除牌号（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/brands/{code}（实现即原 M04.F09.I03） | 开发中 |
+| M04.F09.I01 | 牌号列表 | 页面 | 前端+后端 |  | 已上线 |
+| M04.F09.I02 | 新建/编辑牌号 | 按钮 | 前端+后端 |  | 已上线 |
+| M04.F09.I03 | 删除牌号 | 按钮 | 前端+后端 |  | 已上线 |
+| M04.F09.I04 | 删除牌号（引用保护） | 按钮 | 前端+后端 | BASE 编号对齐：DELETE /api/catalog/brands/{code}（实现即原 M04.F09.I03） | 已上线 |
 
 ### M03.F01 接样管理
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F01.I01 | 接样单列表（flowStatus 三态过滤） | 页面 | 前端+后端 |  | 开发中 |
-| M03.F01.I02 | 新建/编辑接样单 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F01.I03 | 删除接样单 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F01.I04 | 提交接样单（receiving → task_assignment） | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F01.I06 | 接样单流程历史 | 接口 | 前端+后端 | GET /api/receipts/{id}/history：返回 FlowHistoryEntry[]（jsonb 展开为 List） | 开发中 |
-| M03.F01.I07 | 接样单 ext 字段补录 | 接口 | 前端+后端 |  | 开发中 |
-| M03.F01.I08 | 接样-提交 | 接口 | 前端+后端 | POST /api/receipts/receiving/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（react I09 退回/I10 撤回已废弃语义并入本行） | 开发中 |
+| M03.F01.I01 | 接样单列表（flowStatus 三态过滤） | 页面 | 前端+后端 |  | 已上线 |
+| M03.F01.I02 | 新建/编辑接样单 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F01.I03 | 删除接样单 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F01.I04 | 提交接样单（receiving → task_assignment） | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F01.I06 | 接样单流程历史 | 接口 | 前端+后端 | GET /api/receipts/{id}/history：返回 FlowHistoryEntry[]（jsonb 展开为 List） | 已上线 |
+| M03.F01.I07 | 接样单 ext 字段补录 | 接口 | 前端+后端 |  | 已上线 |
+| M03.F01.I08 | 接样-提交 | 接口 | 前端+后端 | POST /api/receipts/receiving/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（react I09 退回/I10 撤回已废弃语义并入本行） | 已上线 |
 
 ### M03.F09 接样单详情
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F09.I01 | 接样单详情页 | 页面 | 前端+后端 |  | 开发中 |
-| M03.F09.I02 | 流程历史时间线 | 查询 | 前端+后端 |  | 开发中 |
-| M03.F09.I03 | 报告预览 | 按钮 | 仅前端 |  | 开发中 |
+| M03.F09.I01 | 接样单详情页 | 页面 | 前端+后端 |  | 已上线 |
+| M03.F09.I02 | 流程历史时间线 | 查询 | 前端+后端 |  | 已上线 |
+| M03.F09.I03 | 报告预览 | 按钮 | 仅前端 |  | 已上线 |
 
 ### M03.F02 任务分配（安排检测人员/计划日期）
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F02.I01 | 任务分配队列 | 页面 | 前端+后端 |  | 开发中 |
-| M03.F02.I02 | 安排/取消检测人员与计划日期 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F02.I03 | 任务取消（清空分配） | 接口 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate，把已分配单子在本阶段重置为未分配（非退回接样；退回接样走 FlowStagePage 通用退回按钮） | 开发中 |
-| M03.F02.I04 | 任务分配三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表 | 开发中 |
-| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/assigning/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；7 阶段全 act 模式） | 开发中 |
+| M03.F02.I01 | 任务分配队列 | 页面 | 前端+后端 |  | 已上线 |
+| M03.F02.I02 | 安排/取消检测人员与计划日期 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F02.I03 | 任务取消（清空分配） | 接口 | 前端+后端 | 清空 assignee/assigneeId/plannedTestDate，把已分配单子在本阶段重置为未分配（非退回接样；退回接样走 FlowStagePage 通用退回按钮） | 已上线 |
+| M03.F02.I04 | 任务分配三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤任务分配列表 | 已上线 |
+| M03.F02.I05 | 任务分配-提交 | 接口 | 前端+后端 | POST /api/receipts/assigning/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；7 阶段全 act 模式） | 已上线 |
 
 ### M03.F03 数据录入（样品检测数据 + 人工改判）
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F03.I01 | 样品 + 检测数据录入页 | 页面 | 前端+后端 |  | 开发中 |
-| M03.F03.I02 | 保存检测记录 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F03.I03 | 人工改判 verdict | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F03.I04 | 更新样品 | 接口 | 前端+后端 | PUT /api/samples/{id}：PATCH 语义 | 开发中 |
-| M03.F03.I06 | 检测记录列表 | 接口 | 前端+后端 | GET /api/test-records?sampleId=&page=&pageSize=：tenant 收口 + sampleId 过滤 + 分页；data-fn=nextjs/react/vue 仓 test-records 页面 | 开发中 |
-| M03.F03.I07 | 检测记录详情 | 接口 | 前端+后端 | GET /api/test-records/{id}：返回 TestRecord | 开发中 |
-| M03.F03.I08 | 创建检测记录 | 接口 | 前端+后端 | POST /api/test-records：sampleId/parameterCode/requirement/result 必填；tenant 从 token claim 注入 | 开发中 |
-| M03.F03.I09 | 更新检测记录 | 接口 | 前端+后端 | PUT /api/test-records/{id}：PATCH 语义，未传字段保留 | 开发中 |
-| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/data-entry/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I13 退回/I14 撤回语义并入本行；7 阶段全 act 模式） | 开发中 |
+| M03.F03.I01 | 样品 + 检测数据录入页 | 页面 | 前端+后端 |  | 已上线 |
+| M03.F03.I02 | 保存检测记录 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F03.I03 | 人工改判 verdict | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F03.I04 | 更新样品 | 接口 | 前端+后端 | PUT /api/samples/{id}：PATCH 语义 | 已上线 |
+| M03.F03.I06 | 检测记录列表 | 接口 | 前端+后端 | GET /api/test-records?sampleId=&page=&pageSize=：tenant 收口 + sampleId 过滤 + 分页；data-fn=nextjs/react/vue 仓 test-records 页面 | 已上线 |
+| M03.F03.I07 | 检测记录详情 | 接口 | 前端+后端 | GET /api/test-records/{id}：返回 TestRecord | 已上线 |
+| M03.F03.I08 | 创建检测记录 | 接口 | 前端+后端 | POST /api/test-records：sampleId/parameterCode/requirement/result 必填；tenant 从 token claim 注入 | 已上线 |
+| M03.F03.I09 | 更新检测记录 | 接口 | 前端+后端 | PUT /api/test-records/{id}：PATCH 语义，未传字段保留 | 已上线 |
+| M03.F03.I12 | 数据录入-提交 | 接口 | 前端+后端 | POST /api/receipts/data-entry/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I13 退回/I14 撤回语义并入本行；7 阶段全 act 模式） | 已上线 |
 
 ### M03.F05 报告审核
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F05.I01 | 审核队列（review 阶段） | 页面 | 前端+后端 |  | 开发中 |
-| M03.F05.I02 | 审核通过/驳回（submit/return） | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F05.I04 | 报告审核三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表 | 开发中 |
-| M03.F05.I07 | 报告审核-提交 | 接口 | 前端+后端 | POST /api/receipts/review/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I08 退回/I09 撤回语义并入本行；4 阶段全 act 合并方案 B） | 开发中 |
+| M03.F05.I01 | 审核队列（review 阶段） | 页面 | 前端+后端 |  | 已上线 |
+| M03.F05.I02 | 审核通过/驳回（submit/return） | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F05.I04 | 报告审核三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告审核列表 | 已上线 |
+| M03.F05.I07 | 报告审核-提交 | 接口 | 前端+后端 | POST /api/receipts/review/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I08 退回/I09 撤回语义并入本行；4 阶段全 act 合并方案 B） | 已上线 |
 
 ### M03.F06 报告批准
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F06.I01 | 批准队列（approval 阶段） | 页面 | 前端+后端 |  | 开发中 |
-| M03.F06.I02 | 批准/驳回 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F06.I04 | 报告批准三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 开发中 |
-| M03.F06.I05 | 报告批准-提交 | 接口 | 前端+后端 | POST /api/receipts/approve/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 开发中 |
+| M03.F06.I01 | 批准队列（approval 阶段） | 页面 | 前端+后端 |  | 已上线 |
+| M03.F06.I02 | 批准/驳回 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F06.I04 | 报告批准三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告批准列表 | 已上线 |
+| M03.F06.I05 | 报告批准-提交 | 接口 | 前端+后端 | POST /api/receipts/approve/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 已上线 |
 
 ### M03.F07 报告发放
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F07.I01 | 发放队列（issuance 阶段） | 页面 | 前端+后端 |  | 开发中 |
-| M03.F07.I02 | 发放（生成报告编号） | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F07.I04 | 报告发放三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 开发中 |
-| M03.F07.I05 | 报告发放-提交 | 接口 | 前端+后端 | POST /api/receipts/issuance/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 开发中 |
+| M03.F07.I01 | 发放队列（issuance 阶段） | 页面 | 前端+后端 |  | 已上线 |
+| M03.F07.I02 | 发放（生成报告编号） | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F07.I04 | 报告发放三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告发放列表 | 已上线 |
+| M03.F07.I05 | 报告发放-提交 | 接口 | 前端+后端 | POST /api/receipts/issuance/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 已上线 |
 
 ### M03.F08 报告归档
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M03.F08.I01 | 归档队列（archived 阶段） | 页面 | 前端+后端 |  | 开发中 |
-| M03.F08.I02 | 归档完成 | 按钮 | 前端+后端 |  | 开发中 |
-| M03.F08.I04 | 报告归档三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 开发中 |
-| M03.F08.I05 | 报告归档-提交 | 接口 | 前端+后端 | POST /api/receipts/archived/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 开发中 |
+| M03.F08.I01 | 归档队列（archived 阶段） | 页面 | 前端+后端 |  | 已上线 |
+| M03.F08.I02 | 归档完成 | 按钮 | 前端+后端 |  | 已上线 |
+| M03.F08.I04 | 报告归档三态过滤器 | 接口 | 前端+后端 | 全部/未提交/已提交：按 flowStatus 过滤报告归档列表 | 已上线 |
+| M03.F08.I05 | 报告归档-提交 | 接口 | 前端+后端 | POST /api/receipts/archived/act，body.action={SUBMIT、RETURN、WITHDRAW} 三动作统一（2026-09-18：I06 退回/I07 撤回语义并入本行；4 阶段全 act 合并方案 B） | 已上线 |
 
 ### M05.F01 报告汇总
 
 | 子项 ID | 名称 | 类型 | 交付 | 说明 | 状态 |
 |---|---|---|---|---|---|
-| M05.F01.I01 | 报告汇总表（按报告类别汇总） | 查询 | 前端+后端 |  | 开发中 |
-| M05.F01.I02 | 仪表盘统计 | 查询 | 仅前端 |  | 开发中 |
-| M05.F01.I03 | 核心指标卡 | 查询 | 前端+后端 | 今日试验总数 + 检测合格率（按材料类型 concrete/rebar/sand）+ 报告产出量（已生成/已签发/待审核）；GET /api/summary/stats 扩展 todayTestCount/qualifiedRateByMaterial/reportOutputByStatus | 开发中 |
-| M05.F01.I04 | 任务状态漏斗 | 报表 | 前端+后端 | 6 段实时计数：待取样→已收样→试验中→报告编制→待审核→已签发；GET /api/summary/stats 扩展 funnelByStage:{pending_collect, received, testing, reporting, reviewing, issued} | 开发中 |
+| M05.F01.I01 | 报告汇总表（按报告类别汇总） | 查询 | 前端+后端 |  | 已上线 |
+| M05.F01.I02 | 仪表盘统计 | 查询 | 仅前端 |  | 已上线 |
+| M05.F01.I03 | 核心指标卡 | 查询 | 前端+后端 | 今日试验总数 + 检测合格率（按材料类型 concrete/rebar/sand）+ 报告产出量（已生成/已签发/待审核）；GET /api/summary/stats 扩展 todayTestCount/qualifiedRateByMaterial/reportOutputByStatus | 已上线 |
+| M05.F01.I04 | 任务状态漏斗 | 报表 | 前端+后端 | 6 段实时计数：待取样→已收样→试验中→报告编制→待审核→已签发；GET /api/summary/stats 扩展 funnelByStage:{pending_collect, received, testing, reporting, reviewing, issued} | 已上线 |
 | M05.F01.I05 | 见证取样跟踪 | 报表 | 前端+后端 | 见证率（合同需见证的接样单中已完成见证的比例）+ 见证到位情况明细；GET /api/summary/stats 扩展 witnessStats:{requireWitness, witnessed, witnessRate, details[]} | 开发中 |
-| M05.F01.I06 | 仪表盘统计基础端点 | 查询 | 前端+后端 | GET /api/summary/stats 基础字段：contractCount/receiptCount/sampleCount + 报告状态 3 桶（draft=receiving+task+data_entry；reviewing=review+approval；issued=issuance+archived）+ pendingTaskCount。ADR-0033 阶段二自后端仓 M05.F02.I01 改挂 F01（BASE I06 下沉对齐） | 开发中 |
+| M05.F01.I06 | 仪表盘统计基础端点 | 查询 | 前端+后端 | GET /api/summary/stats 基础字段：contractCount/receiptCount/sampleCount + 报告状态 3 桶（draft=receiving+task+data_entry；reviewing=review+approval；issued=issuance+archived）+ pendingTaskCount。ADR-0033 阶段二自后端仓 M05.F02.I01 改挂 F01（BASE I06 下沉对齐） | 已上线 |
 
 ---
 

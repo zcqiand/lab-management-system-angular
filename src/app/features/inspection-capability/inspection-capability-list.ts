@@ -105,6 +105,16 @@ const FN_DELETE: Record<CapabilityResource, string> = {
   standards: "M06.F04.I01",
 };
 
+// @entry M06.F01.I01
+// @entry M06.F02.I01
+// @entry M06.F03.I01
+// @entry M06.F04.I01
+// @entry M06.F02.I02
+// @entry M06.F04.I02
+// M06.F02.I02 项目↔专项/参数关联（行内 / 新建表单下拉选检测专项编码）
+// M06.F04.I02 标准 CRUD（行内 编辑/删除 按钮）
+// M06.F03.I02 参数↔标准关联（parameters 行内「关联标准」→ ParameterStandardLinkDialog）
+
 export const STANDARD_STATUS_CN: Record<string, string> = {
   active: "现行",
   superseded: "被替代",
