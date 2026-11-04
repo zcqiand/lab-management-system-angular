@@ -16,9 +16,7 @@
     "GA 翻转收官：①REQ-2026-031 §7 人工验收记录落档（2026-11-03 用户会话拍板）②mirror 免批③ 131 行（26F+105I）开发中→已上线③L5 阻断修正：7 个 UI 入口锚补齐（inspection-capability-list + summary-list 补 react 同款 // @entry 注释块）+ M05.F01.I05（见证率，本仓未实现、react 同项规划中）人工 --approve 退回开发中，gate L0-L5 全绿（138 条目）"
   ],
   "next": "REQ-2026-031 已全闭环（代码+树+GA）。后续可选项：①M05.F01.I05 见证率（开发中，react 同项也规划中，待后端 witnessStats 端点）②遗留搭车：lab-react L4 竞态真修（未提交，另批）",
-  "open_questions": [
-    "gate --all（43 仓连跑）exit=2，15 仓红但全不在 lab-angular：django 系 relation tenant 不存在（库未建/未迁移）、rails/lab-react HTTP 500 与 80s+ 超时（live 后端未起 + 负载假红嫌疑）、双 react-native L5 引用完整性、django+双 harmonyos L1——属其他批次/环境问题，是否开修另批"
-  ],
+  "open_questions": [],
   "deprecated": [
     "lab JWT 铸 token 打 /api/auth/me 必 401（快照只由真 login 写入）——探针只打 /api/contracts 或带真登录态的端点",
     "jsdom 测试 url 必须 :5201 同源；zoneless 卡测试 native input 事件后必须 fixture.detectChanges() 才能断言 DOM 文本",
@@ -32,7 +30,8 @@
     "**input.required + constructor 直调 load = NG0950**（空表两行骗过 rows>1 假绿）——afterNextRender(() => void this.load()) 才对；**裸挂页组件 spec 必须 realChainHttpProviders()**（只给 zoneless 把 GET 打到 about:blank 数据恒空不报错）；插值 data-testid 用 [attr.data-testid]",
     "树 L5 悬空引用=mirror 树缺 I 级登记——tree-change.json（mirror:true）→ --report → --apply 免批 → 写 function-tree.md（状态=开发中，废弃行不入镜像）",
     "**GA 后 L5 把「无 UI 入口」从告警升为阻断**（开发中只是 WARN）——镜像登记/推进时以 gate L5 是否阻断为准；angular 拷 react 件时 // @entry 注释块必须随拷（data-fn 与 @entry 两锚型，FN_ID 映射表里的字符串字面量不算锚）；mirror 变更类只许 规划→开发中 / 开发中→已上线，GA 后退回属类外变更须人工 --approve",
-    "**gate.py 必须从 suite 根跑**（angular 仓 cwd 下 scripts/gate.py 不存在，exit 2 假红）；gate --all 输出有缓冲，日志要等 gate.py 结束才落盘；gate 转后台后长时间 0 CPU=挂死，杀进程重跑（2026-11-03 实证）"
+    "**gate.py 必须从 suite 根跑**（angular 仓 cwd 下 scripts/gate.py 不存在，exit 2 假红）；gate --all 输出有缓冲，日志要等 gate.py 结束才落盘；gate 转后台后长时间 0 CPU=挂死，杀进程重跑（2026-11-03 实证）",
+    "**gate --all 禁传单一 DATABASE_URL**（2026-11-04 四轮实证：lab_test 传入→saas 家族 8 仓 L4 连错族库秒败假红；不带 export 走 gate-inject .env.test 即全绿 GATE_ALL_EXIT=0）+ harmonyos 双仓须 SDK PATH/DEVECO_SDK_HOME 同调用 export；总账 gate-all-single-database-url-cross-family-fake-red"
   ],
   "last_gate_passed_at": "2026-11-04"
 }
